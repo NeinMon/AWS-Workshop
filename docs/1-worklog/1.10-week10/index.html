@@ -1,0 +1,2141 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.150.0">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="thienlh@thienlu.com" />
+
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <title>Week 10 Worklog :: Internship Report</title>
+
+    
+    <link href="../../css/nucleus.css?1765285578" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1765285578" rel="stylesheet">
+    <link href="../../css/hybrid.css?1765285578" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1765285578" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1765285578" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1765285578" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1765285578" rel="stylesheet">
+    <link href="../../css/theme.css?1765285578" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1765285578" rel="stylesheet">
+    
+    <link href="../../css/theme-workshop.css?1765285578" rel="stylesheet">
+    
+    
+
+    <script src="../../js/jquery-3.3.1.min.js?1765285578"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../1-worklog/1.10-week10/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1765285578"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1765285578"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1765285578"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/1-worklog/"
+  title="Worklog"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../1-worklog/">
+     <b> 1. </b> Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/1-worklog/1.1-week1/"
+  title="Week 1 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.1-week1/">
+     <b> 1.1. </b> Week 1 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.2-week2/"
+  title="Week 2 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.2-week2/">
+     <b> 1.2. </b> Week 2 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.3-week3/"
+  title="Week 3 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.3-week3/">
+     <b> 1.3. </b> Week 3 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.4-week4/"
+  title="Week 4 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.4-week4/">
+     <b> 1.4. </b> Week 4 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.5-week5/"
+  title="Week 5 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.5-week5/">
+     <b> 1.5. </b> Week 5 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.6-week6/"
+  title="Week 6 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.6-week6/">
+     <b> 1.6. </b> Week 6 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.7-week7/"
+  title="Week 7 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.7-week7/">
+     <b> 1.7. </b> Week 7 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.8-week8/"
+  title="Week 8 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.8-week8/">
+     <b> 1.8. </b> Week 8 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.9-week9/"
+  title="Week 9 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.9-week9/">
+     <b> 1.9. </b> Week 9 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.10-week10/"
+  title="Week 10 Worklog"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../1-worklog/1.10-week10/">
+     <b> 1.10. </b> Week 10 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.11-week11/"
+  title="Week 11 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.11-week11/">
+     <b> 1.11. </b> Week 11 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.12-week12/"
+  title="Week 12 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.12-week12/">
+     <b> 1.12. </b> Week 12 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/2-proposal/"
+  title="Proposal"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../2-proposal/">
+     <b> 2. </b> Proposal 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/3-blogstranslated/"
+  title="Translated Blogs"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/">
+     <b> 3. </b> Translated Blogs 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+        
+            
+<li
+  data-nav-id="/3-blogstranslated/3.1-blog1/aws-ra-m%E1%BA%AFt-chuy%E1%BA%BFn-l%C6%B0u-di%E1%BB%85n-genai-loft-nh%E1%BA%B1m-th%C3%BAc-%C4%91%E1%BA%A9y-%C4%91%E1%BB%95i-m%E1%BB%9Bi-s%C3%A1ng-t%E1%BA%A1o-ai-trong-c%E1%BB%99ng-%C4%91%E1%BB%93ng-kh%E1%BB%9Fi-nghi%E1%BB%87p-v%C3%A0-nh%C3%A0-ph%C3%A1t-tri%E1%BB%83n-to%C3%A0n-c%E1%BA%A7u/"
+  title=""
+  class="dd-item "
+>
+  <a href="../../3-blogstranslated/3.1-blog1/aws-ra-m%E1%BA%AFt-chuy%E1%BA%BFn-l%C6%B0u-di%E1%BB%85n-genai-loft-nh%E1%BA%B1m-th%C3%BAc-%C4%91%E1%BA%A9y-%C4%91%E1%BB%95i-m%E1%BB%9Bi-s%C3%A1ng-t%E1%BA%A1o-ai-trong-c%E1%BB%99ng-%C4%91%E1%BB%93ng-kh%E1%BB%9Fi-nghi%E1%BB%87p-v%C3%A0-nh%C3%A0-ph%C3%A1t-tri%E1%BB%83n-to%C3%A0n-c%E1%BA%A7u/">
+     <i
+      class="fas fa-check read-icon"
+    ></i
+    >
+  </a>
+</li>
+      
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+        
+            
+<li
+  data-nav-id="/3-blogstranslated/3.3-blog3/t%E1%BB%91i-%C6%B0u-h%C3%B3a-chi-ph%C3%AD-khi-s%E1%BB%AD-d%E1%BB%A5ng-c%C3%A1c-m%C3%B4-h%C3%ACnh-n%E1%BB%81n-t%E1%BA%A3ng-v%E1%BB%9Bi-amazon-bedrock/"
+  title=""
+  class="dd-item "
+>
+  <a href="../../3-blogstranslated/3.3-blog3/t%E1%BB%91i-%C6%B0u-h%C3%B3a-chi-ph%C3%AD-khi-s%E1%BB%AD-d%E1%BB%A5ng-c%C3%A1c-m%C3%B4-h%C3%ACnh-n%E1%BB%81n-t%E1%BA%A3ng-v%E1%BB%9Bi-amazon-bedrock/">
+     <i
+      class="fas fa-check read-icon"
+    ></i
+    >
+  </a>
+</li>
+      
+  </ul>
+  
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/4-eventparticipated/"
+  title="Events Participated"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/">
+     <b> 4. </b> Events Participated 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.3-event3/"
+  title="Event 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.3-event3/">
+     <b> 4.3. </b> Event 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.1-workshop-overview/"
+  title="Introduction"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Introduction 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.2-prerequiste/"
+  title="Prerequiste"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.2-prerequiste/">
+    <b> 5.2. </b>Prerequiste 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-backend/"
+  title="Backend Deployment"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-backend/">
+    <b> 5.3. </b>Backend Deployment 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.3-backend/5.3.1-amazondynamodb/"
+  title="Amazon DynamoDB"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-backend/5.3.1-amazondynamodb/">
+    <b> 5.3.1 </b>Amazon DynamoDB 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-backend/5.3.2-amazoncognito/"
+  title="Amazon Cognito"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-backend/5.3.2-amazoncognito/">
+    <b> 5.3.2 </b>Amazon Cognito 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-backend/5.3.3-amazons3/"
+  title="Amazon S3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-backend/5.3.3-amazons3/">
+    <b> 5.3.3 </b>Amazon S3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-backend/5.3.4-lambdaapigateway/"
+  title="LAMBDA &#43; API GATEWAY"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-backend/5.3.4-lambdaapigateway/">
+    <b> 5.3.4 </b>LAMBDA &#43; API GATEWAY 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-frontend/"
+  title="Frontend Development"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-frontend/">
+     <b> 5.4. </b> Frontend Development 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.4-frontend/5.4.1-amazonamplify/"
+  title="Amazon Amplify"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-frontend/5.4.1-amazonamplify/">
+    <b> 5.4.1 </b>Amazon Amplify 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-frontend/5.4.2-cloudfrontwaf/"
+  title="Amazon CloudFornt &amp; WAF"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-frontend/5.4.2-cloudfrontwaf/">
+    <b> 5.4.2 </b>Amazon CloudFornt &amp; WAF 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-frontend/5.4.3-route53/"
+  title="Amazon Route53"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-frontend/5.4.3-route53/">
+    <b> 5.4.3 </b>Amazon Route53 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.5-ci-cd/"
+  title="CI/CD Pipeline"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.5-ci-cd/">
+     <b> 5.5. </b> CI/CD Pipeline 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.6-cloud-watch/"
+  title="Cloud Watch"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.6-cloud-watch/">
+     <b> 5.6. </b> Cloud Watch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.7-clean-up/"
+  title="Clean Up"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.7-clean-up/">
+    <b>5.7. </b>Clean Up 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/6-self-evaluation/"
+  title="Self-Assessment"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../6-self-evaluation/">
+     <b> 6. </b> Self-Assessment 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/7-feedback/"
+  title="Sharing and Feedback"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../7-feedback/">
+     <b> 7. </b> Sharing and Feedback 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="https://thienluhoan.github.io/workshop-template/1-worklog/1.10-week10/"
+                  selected
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="https://thienluhoan.github.io/workshop-template/vi/1-worklog/1.10-week10/"
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../'>Internship Report</a> > <a href='../../1-worklog/'>Worklog</a> > Week 10 Worklog
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#week-10-objectives">Week 10 Objectives:</a></li>
+        <li><a href="#tasks-to-be-carried-out-this-week">Tasks to be carried out this week:</a></li>
+        <li><a href="#week-10-achievements">Week 10 Achievements:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Week 10 Worklog
+            </h1>
+          
+
+        
+
+
+
+	<h3 id="week-10-objectives">Week 10 Objectives:</h3>
+<ul>
+<li>Implement REST API for Chat Messages</li>
+<li>Add Reactions feature (Like/Heart) for chat messages</li>
+<li>Implement Delete Comment API</li>
+<li>Optimize Lambda functions and API performance</li>
+</ul>
+<h3 id="tasks-to-be-carried-out-this-week">Tasks to be carried out this week:</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Day</th>
+          <th>Task</th>
+          <th>Start Date</th>
+          <th>Completion Date</th>
+          <th>Reference Material</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>2</td>
+          <td>- Design Chat Message schema: <br>  + Messages table (PK=message_id, GSI on class_id) <br>  + Attributes: class_id, author_id, content, reactions, created_at <br>  + Enable DynamoDB Streams for change tracking</td>
+          <td>11/11/2025</td>
+          <td>11/11/2025</td>
+          <td><a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html">DynamoDB Streams</a></td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>- Implement Chat REST APIs: <br>  + GET <code>/chat/messages/{class_id}</code> - List messages <br>  + POST <code>/chat/messages</code> - Send message <br>  + Polling mechanism for new messages <br>  + Support pagination</td>
+          <td>12/11/2025</td>
+          <td>12/11/2025</td>
+          <td><a href="https://docs.aws.amazon.com/lambda/latest/dg/with-ddb.html">Lambda with DynamoDB</a></td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>- Implement Reactions API: <br>  + PUT <code>/chat/messages/{id}/reactions</code> - Update Reactions <br>  + DynamoDB atomic counter (like_count, heart_count) <br>  + Track user reactions (prevent duplicates)</td>
+          <td>13/11/2025</td>
+          <td>13/11/2025</td>
+          <td><a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.AtomicCounters">DynamoDB Atomic Counters</a></td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>- Implement Delete Comment API: <br>  + DELETE <code>/comments/{id}</code> - Delete Comment <br>  + Validate author permissions <br>  + Soft delete (status=0) <br>  + Update comment count</td>
+          <td>14/11/2025</td>
+          <td>14/11/2025</td>
+          <td><a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-authorization-flow.html">API Gateway Authorization</a></td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>- Lambda optimization &amp; testing: <br> - Connection pooling for DynamoDB <br> - Lambda layers for shared code <br> - Test polling mechanism <br> - Performance testing (100 concurrent users)</td>
+          <td>15/11/2025</td>
+          <td>15/11/2025</td>
+          <td><a href="https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html">Lambda Best Practices</a></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="week-10-achievements">Week 10 Achievements:</h3>
+<p><strong>DynamoDB Setup for Chat Messages</strong>:</p>
+<ul>
+<li>
+<p>✅ <strong>Messages</strong> table created:</p>
+<ul>
+<li>PK: message_id (UUID)</li>
+<li>Attributes: class_id, author_id, author_name, content, reactions (Map), created_at</li>
+<li>GSI: class_id-index (PK=class_id, SK=created_at) for listing messages by class</li>
+<li>TTL attribute: expires_at (optional - auto-delete messages after 90 days)</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>DynamoDB Streams</strong> enabled:</p>
+<ul>
+<li>Stream view type: NEW_AND_OLD_IMAGES</li>
+<li>Lambda trigger for change tracking</li>
+<li>Used for audit logging and analytics</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Cognito Integration</strong>:</p>
+<ul>
+<li>JWT token validation for all endpoints</li>
+<li>User enrollment check before message access</li>
+</ul>
+</li>
+</ul>
+<p><strong>APIs Implemented (4 Chat + Reactions + Delete Endpoints)</strong>:</p>
+<ul>
+<li>
+<p>✅ <strong>GET</strong> <code>/chat/messages/{class_id}</code> - Get Chat Messages (REST API)</p>
+<ul>
+<li>Query parameters: limit (default: 50), lastEvaluatedKey</li>
+<li>Query Messages table using GSI (class_id-index)</li>
+<li>Sort by created_at (ascending - oldest first)</li>
+<li>Pagination: limit 50 messages per page</li>
+<li>Returns: <code>{ messages: [...], lastEvaluatedKey }</code></li>
+<li>Latency: ~120ms</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>POST</strong> <code>/chat/messages</code> - Send Chat Message (REST API)</p>
+<ul>
+<li>Request body: <code>{ class_id, content }</code></li>
+<li>Validate user is enrolled in class</li>
+<li>Write to Messages table (message_id, class_id, author_id, content, created_at)</li>
+<li><strong>Trigger DynamoDB Stream</strong>: Change captured for analytics</li>
+<li>Returns: message_id, created_at</li>
+<li>Latency: ~80ms (write)</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>PUT</strong> <code>/chat/messages/{id}/reactions</code> - Update Reactions (Like/Heart)</p>
+<ul>
+<li>Request body: <code>{ reaction_type: &quot;like&quot; | &quot;heart&quot; }</code></li>
+<li>DynamoDB atomic update:
+<ul>
+<li>If user not in <code>liked_by</code>: Increment <code>like_count</code>, append user_id to <code>liked_by</code></li>
+<li>If user already liked: Decrement <code>like_count</code>, remove user_id (toggle)</li>
+</ul>
+</li>
+<li>Use <code>UpdateExpression</code>: <code>SET reactions.like_count = reactions.like_count + :val</code></li>
+<li>Prevent duplicate reactions from same user</li>
+<li>Returns: updated reaction counts <code>{ like_count, heart_count }</code></li>
+<li>Latency: ~60ms</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>DELETE</strong> <code>/comments/{id}</code> - Delete Comment</p>
+<ul>
+<li>Path parameter: comment_id</li>
+<li>Validate user is comment author OR teacher of class</li>
+<li>Query PostComments table to get post_id</li>
+<li>Soft delete: Update status=0 in PostComments table</li>
+<li>Atomic decrement comment_count in Posts table</li>
+<li>Returns: <code>{ message: &quot;Comment deleted successfully&quot; }</code></li>
+<li>Latency: ~90ms</li>
+</ul>
+</li>
+</ul>
+<p><strong>Message Polling Flow</strong>:</p>
+<ol>
+<li>Client calls GET <code>/chat/messages/{class_id}</code> periodically (every 3-5 seconds)</li>
+<li>Query includes <code>lastMessageTimestamp</code> parameter</li>
+<li>API returns only new messages after that timestamp</li>
+<li>Client updates UI with new messages</li>
+<li><strong>Polling interval</strong>: 3 seconds (configurable)</li>
+<li><strong>Optimization</strong>: Client-side caching to reduce API calls</li>
+</ol>
+<p><strong>Lambda Optimization</strong>:</p>
+<ul>
+<li>
+<p>✅ Connection pooling implemented:</p>
+<ul>
+<li>DynamoDB client reuse across invocations</li>
+<li>Reduced latency: 80ms → 15ms per query</li>
+</ul>
+</li>
+<li>
+<p>✅ Lambda layers created:</p>
+<ul>
+<li>aws-sdk-layer: 12MB (DynamoDB clients)</li>
+<li>utils-layer: 1.5MB (shared utilities)</li>
+<li>Reduced individual function size by 65%</li>
+</ul>
+</li>
+<li>
+<p>✅ Bundle optimization:</p>
+<ul>
+<li>Webpack tree-shaking enabled</li>
+<li>Bundle size: 6MB → 2.5MB</li>
+<li>Cold start time: 1.8s → 600ms (67% improvement)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Testing Results</strong>:</p>
+<ul>
+<li>✅ Chat polling mechanism: 100 concurrent users, 3-second polling interval</li>
+<li>✅ Chat message latency: 80ms avg (write)</li>
+<li>✅ Message retrieval: 120ms avg latency (with pagination)</li>
+<li>✅ Reactions API: 60ms avg latency (atomic update)</li>
+<li>✅ Delete Comment: 90ms avg latency</li>
+<li>✅ Load test: 500 messages sent over 10 minutes, 0 errors</li>
+</ul>
+<p><strong>Monitoring Infrastructure</strong>:</p>
+<ul>
+<li>
+<p>✅ CloudWatch dashboards created:</p>
+<ul>
+<li><strong>API Performance</strong>: Request count, latency (p50, p95, p99), errors</li>
+<li><strong>Lambda Metrics</strong>: Invocations, duration, errors, concurrent executions</li>
+<li><strong>DynamoDB Metrics</strong>: Read/write capacity, throttles</li>
+<li><strong>Cost Dashboard</strong>: Daily spending by service</li>
+</ul>
+</li>
+<li>
+<p>✅ CloudWatch Alarms configured (8 alarms):</p>
+<ol>
+<li>API Gateway 5xx errors &gt; 10 in 5 minutes</li>
+<li>Lambda error rate &gt; 5%</li>
+<li>DynamoDB throttles &gt; 50 in 5 minutes</li>
+<li>API latency p99 &gt; 2 seconds</li>
+<li>Lambda concurrent executions &gt; 800</li>
+<li>Daily cost &gt; $20</li>
+<li>S3 bucket storage &gt; 50GB</li>
+<li>Cognito authentication failures &gt; 20 in 5 minutes</li>
+</ol>
+</li>
+<li>
+<p>✅ AWS X-Ray tracing enabled:</p>
+<ul>
+<li>All Lambda functions instrumented</li>
+<li>Service map visualization</li>
+<li>Identify bottlenecks (DynamoDB queries, S3 uploads)</li>
+</ul>
+</li>
+</ul>
+<p><strong>End-to-End Testing</strong>:</p>
+<ul>
+<li>✅ All 11 APIs tested:
+<ul>
+<li>5 Class Management APIs</li>
+<li>5 Assignment Management APIs</li>
+<li>1 Post API</li>
+</ul>
+</li>
+<li>✅ Test scenarios:
+<ul>
+<li>Create class → Add assignment → Update grades → Post announcement</li>
+<li>List classes → List assignments → List students</li>
+<li>Edit/Delete operations</li>
+</ul>
+</li>
+<li>✅ Authentication flow validated</li>
+<li>✅ File upload/download tested</li>
+<li>✅ Notification delivery confirmed</li>
+</ul>
+<p><strong>Performance Metrics</strong>:</p>
+<ul>
+<li>API response time: 280ms → 180ms (average)</li>
+<li>Lambda cold start: 1.8s → 600ms</li>
+<li>DynamoDB query latency: 80ms → 15ms</li>
+<li>Cache hit rate: 68%</li>
+<li>Error rate: &lt; 0.1%</li>
+</ul>
+<p><strong>Cost Estimate (Production)</strong>:</p>
+<ul>
+<li>Lambda: ~$5-8/month (1M requests)</li>
+<li>DynamoDB: ~$3-5/month (on-demand)</li>
+<li>API Gateway: ~$3-4/month</li>
+<li>S3: ~$1-2/month (10GB storage)</li>
+<li>CloudWatch: ~$2-3/month</li>
+<li>SNS: ~$0.50/month</li>
+<li><strong>Total: ~$15-23/month</strong> (for 100-200 active users)</li>
+<li>✅ Model: aws-sims recipe, training time 2.5 hours</li>
+<li>✅ Metrics: Precision@5: 0.73, Recall@5: 0.68, Coverage: 0.85</li>
+<li>✅ Lambda integration with GetRecommendations API</li>
+</ul>
+<p><strong>DynamoDB Optimization</strong>:</p>
+<ul>
+<li>✅ <strong>ClassRankingIndex GSI</strong>: PK: classId, SK: score
+<ul>
+<li>Query time: 1.2s → 80ms (93% reduction)</li>
+<li>RCU usage: 1000 → 5 (99.5% reduction)</li>
+</ul>
+</li>
+<li>✅ <strong>TopPerformersIndex</strong> (Sparse GSI): score &gt; 80 only
+<ul>
+<li>Index size reduced by 70%</li>
+</ul>
+</li>
+</ul>
+<p><strong>Real-Time Notifications</strong>:</p>
+<ul>
+<li>✅ EventBridge rule triggers on score updates</li>
+<li>✅ End-to-end latency: 1.5 seconds (score update → notification)</li>
+<li>✅ Polling-based notification delivery</li>
+</ul>
+<p><strong>Performance Testing Results</strong>:</p>
+<ul>
+<li>✅ Load test: 500 concurrent users, 100 req/sec for 30 minutes</li>
+<li>✅ Average response time: 320ms</li>
+<li>✅ 95th percentile: 650ms</li>
+<li>✅ Error rate: 0.02% (timeouts only)</li>
+<li>✅ API Gateway cache hit rate: 72%</li>
+</ul>
+<p><strong>CloudWatch Dashboards</strong>:</p>
+<ul>
+<li>✅ Created &ldquo;Ranking Analytics&rdquo; dashboard with metrics:
+<ul>
+<li>Lambda invocations, duration, errors</li>
+<li>API Gateway latency, cache hit rate</li>
+<li>DynamoDB throttles, read/write capacity</li>
+</ul>
+</li>
+</ul>
+<p><strong>Cost Analysis (Week 10)</strong>:</p>
+<ul>
+<li>Lambda: $1.40 (~3M invocations with polling)</li>
+<li>DynamoDB: $1.20 (increased reads from polling)</li>
+<li>API Gateway: $0.60</li>
+<li>CloudWatch: $0.25</li>
+<li><strong>Total: $3.45 USD</strong></li>
+</ul>
+<p><strong>Key Learnings</strong>:</p>
+<ul>
+<li>Polling interval balance: Too frequent = high cost, too slow = poor UX</li>
+<li>DynamoDB GSI design critical for efficient message queries</li>
+<li>API Gateway caching reduces Lambda invocations by 70%</li>
+<li>Client-side caching essential for polling approach</li>
+<li>DynamoDB Streams useful for audit logging and analytics</li>
+<li>Load testing reveals bottlenecks not visible in development</li>
+</ul>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../1-worklog/1.9-week9/" title="Week 9 Worklog"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../1-worklog/1.11-week11/" title="Week 11 Worklog" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1765285578"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1765285578"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1765285578"></script>
+    <script src="../../js/jquery.sticky.js?1765285578"></script>
+    <script src="../../js/featherlight.min.js?1765285578"></script>
+    <script src="../../js/highlight.pack.js?1765285578"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1765285578"></script>
+    <script src="../../js/learn.js?1765285578"></script>
+    <script src="../../js/hugo-learn.js?1765285578"></script>
+
+    <link href="../../mermaid/mermaid.css?1765285578" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1765285578"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.150.0">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="thienlh@thienlu.com" />
+
+    <link rel="icon" href="../../../images/favicon.png" type="image/png">
+
+    <title> :: Internship Report</title>
+
+    
+    <link href="../../../css/nucleus.css?1765285578" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1765285578" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1765285578" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1765285578" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1765285578" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1765285578" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1765285578" rel="stylesheet">
+    <link href="../../../css/theme.css?1765285578" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1765285578" rel="stylesheet">
+    
+    <link href="../../../css/theme-workshop.css?1765285578" rel="stylesheet">
+    
+    
+
+    <script src="../../../js/jquery-3.3.1.min.js?1765285578"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../../3-blogstranslated/3.3-blog3/t%E1%BB%91i-%C6%B0u-h%C3%B3a-chi-ph%C3%AD-khi-s%E1%BB%AD-d%E1%BB%A5ng-c%C3%A1c-m%C3%B4-h%C3%ACnh-n%E1%BB%81n-t%E1%BA%A3ng-v%E1%BB%9Bi-amazon-bedrock/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../../js/lunr.min.js?1765285578"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1765285578"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/";
+    
+</script>
+<script type="text/javascript" src="../../../js/search.js?1765285578"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/1-worklog/"
+  title="Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/">
+     <b> 1. </b> Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/1-worklog/1.1-week1/"
+  title="Week 1 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.1-week1/">
+     <b> 1.1. </b> Week 1 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.2-week2/"
+  title="Week 2 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.2-week2/">
+     <b> 1.2. </b> Week 2 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.3-week3/"
+  title="Week 3 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.3-week3/">
+     <b> 1.3. </b> Week 3 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.4-week4/"
+  title="Week 4 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.4-week4/">
+     <b> 1.4. </b> Week 4 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.5-week5/"
+  title="Week 5 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.5-week5/">
+     <b> 1.5. </b> Week 5 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.6-week6/"
+  title="Week 6 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.6-week6/">
+     <b> 1.6. </b> Week 6 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.7-week7/"
+  title="Week 7 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.7-week7/">
+     <b> 1.7. </b> Week 7 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.8-week8/"
+  title="Week 8 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.8-week8/">
+     <b> 1.8. </b> Week 8 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.9-week9/"
+  title="Week 9 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.9-week9/">
+     <b> 1.9. </b> Week 9 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.10-week10/"
+  title="Week 10 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.10-week10/">
+     <b> 1.10. </b> Week 10 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.11-week11/"
+  title="Week 11 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.11-week11/">
+     <b> 1.11. </b> Week 11 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.12-week12/"
+  title="Week 12 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.12-week12/">
+     <b> 1.12. </b> Week 12 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/2-proposal/"
+  title="Proposal"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../2-proposal/">
+     <b> 2. </b> Proposal 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/3-blogstranslated/"
+  title="Translated Blogs"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../../3-blogstranslated/">
+     <b> 3. </b> Translated Blogs 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+        
+            
+<li
+  data-nav-id="/3-blogstranslated/3.1-blog1/aws-ra-m%E1%BA%AFt-chuy%E1%BA%BFn-l%C6%B0u-di%E1%BB%85n-genai-loft-nh%E1%BA%B1m-th%C3%BAc-%C4%91%E1%BA%A9y-%C4%91%E1%BB%95i-m%E1%BB%9Bi-s%C3%A1ng-t%E1%BA%A1o-ai-trong-c%E1%BB%99ng-%C4%91%E1%BB%93ng-kh%E1%BB%9Fi-nghi%E1%BB%87p-v%C3%A0-nh%C3%A0-ph%C3%A1t-tri%E1%BB%83n-to%C3%A0n-c%E1%BA%A7u/"
+  title=""
+  class="dd-item "
+>
+  <a href="../../../3-blogstranslated/3.1-blog1/aws-ra-m%E1%BA%AFt-chuy%E1%BA%BFn-l%C6%B0u-di%E1%BB%85n-genai-loft-nh%E1%BA%B1m-th%C3%BAc-%C4%91%E1%BA%A9y-%C4%91%E1%BB%95i-m%E1%BB%9Bi-s%C3%A1ng-t%E1%BA%A1o-ai-trong-c%E1%BB%99ng-%C4%91%E1%BB%93ng-kh%E1%BB%9Fi-nghi%E1%BB%87p-v%C3%A0-nh%C3%A0-ph%C3%A1t-tri%E1%BB%83n-to%C3%A0n-c%E1%BA%A7u/">
+     <i
+      class="fas fa-check read-icon"
+    ></i
+    >
+  </a>
+</li>
+      
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../../3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+        
+            
+<li
+  data-nav-id="/3-blogstranslated/3.3-blog3/t%E1%BB%91i-%C6%B0u-h%C3%B3a-chi-ph%C3%AD-khi-s%E1%BB%AD-d%E1%BB%A5ng-c%C3%A1c-m%C3%B4-h%C3%ACnh-n%E1%BB%81n-t%E1%BA%A3ng-v%E1%BB%9Bi-amazon-bedrock/"
+  title=""
+  class="dd-item active"
+>
+  <a href="../../../3-blogstranslated/3.3-blog3/t%E1%BB%91i-%C6%B0u-h%C3%B3a-chi-ph%C3%AD-khi-s%E1%BB%AD-d%E1%BB%A5ng-c%C3%A1c-m%C3%B4-h%C3%ACnh-n%E1%BB%81n-t%E1%BA%A3ng-v%E1%BB%9Bi-amazon-bedrock/">
+     <i
+      class="fas fa-check read-icon"
+    ></i
+    >
+  </a>
+</li>
+      
+  </ul>
+  
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/4-eventparticipated/"
+  title="Events Participated"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../4-eventparticipated/">
+     <b> 4. </b> Events Participated 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.3-event3/"
+  title="Event 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../4-eventparticipated/4.3-event3/">
+     <b> 4.3. </b> Event 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.1-workshop-overview/"
+  title="Introduction"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Introduction 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.2-prerequiste/"
+  title="Prerequiste"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.2-prerequiste/">
+    <b> 5.2. </b>Prerequiste 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-backend/"
+  title="Backend Deployment"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.3-backend/">
+    <b> 5.3. </b>Backend Deployment 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.3-backend/5.3.1-amazondynamodb/"
+  title="Amazon DynamoDB"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.3-backend/5.3.1-amazondynamodb/">
+    <b> 5.3.1 </b>Amazon DynamoDB 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-backend/5.3.2-amazoncognito/"
+  title="Amazon Cognito"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.3-backend/5.3.2-amazoncognito/">
+    <b> 5.3.2 </b>Amazon Cognito 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-backend/5.3.3-amazons3/"
+  title="Amazon S3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.3-backend/5.3.3-amazons3/">
+    <b> 5.3.3 </b>Amazon S3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-backend/5.3.4-lambdaapigateway/"
+  title="LAMBDA &#43; API GATEWAY"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.3-backend/5.3.4-lambdaapigateway/">
+    <b> 5.3.4 </b>LAMBDA &#43; API GATEWAY 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-frontend/"
+  title="Frontend Development"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.4-frontend/">
+     <b> 5.4. </b> Frontend Development 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.4-frontend/5.4.1-amazonamplify/"
+  title="Amazon Amplify"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.4-frontend/5.4.1-amazonamplify/">
+    <b> 5.4.1 </b>Amazon Amplify 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-frontend/5.4.2-cloudfrontwaf/"
+  title="Amazon CloudFornt &amp; WAF"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.4-frontend/5.4.2-cloudfrontwaf/">
+    <b> 5.4.2 </b>Amazon CloudFornt &amp; WAF 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-frontend/5.4.3-route53/"
+  title="Amazon Route53"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.4-frontend/5.4.3-route53/">
+    <b> 5.4.3 </b>Amazon Route53 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.5-ci-cd/"
+  title="CI/CD Pipeline"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.5-ci-cd/">
+     <b> 5.5. </b> CI/CD Pipeline 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.6-cloud-watch/"
+  title="Cloud Watch"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.6-cloud-watch/">
+     <b> 5.6. </b> Cloud Watch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.7-clean-up/"
+  title="Clean Up"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.7-clean-up/">
+    <b>5.7. </b>Clean Up 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/6-self-evaluation/"
+  title="Self-Assessment"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../6-self-evaluation/">
+     <b> 6. </b> Self-Assessment 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/7-feedback/"
+  title="Sharing and Feedback"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../7-feedback/">
+     <b> 7. </b> Sharing and Feedback 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="https://thienluhoan.github.io/workshop-template/3-blogstranslated/3.3-blog3/t%E1%BB%91i-%C6%B0u-h%C3%B3a-chi-ph%C3%AD-khi-s%E1%BB%AD-d%E1%BB%A5ng-c%C3%A1c-m%C3%B4-h%C3%ACnh-n%E1%BB%81n-t%E1%BA%A3ng-v%E1%BB%9Bi-amazon-bedrock/"
+                  selected
+                >
+                  English
+                </option>
+                     
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../../'>Internship Report</a> > <a href='../../../3-blogstranslated/'>Translated Blogs</a> > <a href='../../../3-blogstranslated/3.3-blog3/'>Blog 3</a> > 
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#amazon-bedrock-là-gì"><strong>Amazon Bedrock là gì?</strong></a></li>
+        <li><a href="#inference-khối-xây-dựng-mới-trong-các-ứng-dụng-hiện-đại"><strong>Inference, khối xây dựng mới trong các ứng dụng hiện đại</strong></a></li>
+        <li><a href="#mô-hình-định-giá-linh-hoạt-cho-mọi-trường-hợp-sử-dụng"><strong>Mô hình định giá linh hoạt cho mọi trường hợp sử dụng</strong></a></li>
+        <li><a href="#lựa-chọn-mô-hình-chiến-lược"><strong>Lựa chọn mô hình chiến lược</strong></a></li>
+        <li><a href="#tận-dụng-knowledge-bases"><strong>Tận dụng Knowledge Bases</strong></a></li>
+        <li><a href="#tùy-chỉnh-để-nâng-cao-hiệu-suất"><strong>Tùy chỉnh để nâng cao hiệu suất</strong></a></li>
+        <li><a href="#distillation-để-có-hiệu-suất-tiết-kiệm-chi-phí-hơn"><strong>Distillation để có hiệu suất tiết kiệm chi phí hơn</strong></a></li>
+        <li><a href="#prompt-caching-để-giảm-chi-phí-và-độ-trễ"><strong>Prompt Caching để giảm chi phí và độ trễ</strong></a></li>
+        <li><a href="#automated-reasoning-để-cải-thiện-độ-chính-xác"><strong>Automated Reasoning để Cải Thiện Độ Chính Xác</strong></a></li>
+        <li><a href="#kết-luận"><strong>Kết Luận</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              
+            </h1>
+          
+
+        
+
+
+<p><strong>Tối ưu hóa chi phí khi sử dụng các mô hình nền tảng với Amazon Bedrock</strong></p>
+<p>by Adam Richter and <a href="https://aws.amazon.com/blogs/aws-cloud-financial-management/author/bowewang/">Bowen Wang</a> | on 22 APR 2025 | in <a href="https://aws.amazon.com/blogs/aws-cloud-financial-management/category/artificial-intelligence/amazon-machine-learning/amazon-bedrock/">Amazon Bedrock</a>, <a href="https://aws.amazon.com/blogs/aws-cloud-financial-management/category/artificial-intelligence/amazon-machine-learning/amazon-bedrock/amazon-bedrock-guardrails/">Amazon Bedrock Guardrails</a>, <a href="https://aws.amazon.com/blogs/aws-cloud-financial-management/category/artificial-intelligence/amazon-machine-learning/amazon-bedrock/amazon-bedrock-knowledge-bases/">Amazon Bedrock Knowledge Bases</a>, <a href="https://aws.amazon.com/blogs/aws-cloud-financial-management/category/artificial-intelligence/">Artificial Intelligence</a>, <a href="https://aws.amazon.com/blogs/aws-cloud-financial-management/category/aws-cloud-financial-management/">AWS Cloud Financial Management</a>, <a href="https://aws.amazon.com/blogs/aws-cloud-financial-management/category/post-types/best-practices/">Best Practices</a>, <a href="https://aws.amazon.com/blogs/aws-cloud-financial-management/category/generative-ai-2/">Generative AI</a> | <a href="https://aws.amazon.com/blogs/aws-cloud-financial-management/optimizing-cost-for-using-foundational-models-with-amazon-bedrock/">Permalink</a> | <a href="https://aws.amazon.com/vi/blogs/aws-cloud-financial-management/optimizing-cost-for-using-foundational-models-with-amazon-bedrock/">Share</a></p>
+<p>Bài viết này được cải thiện nhờ các nhận xét từ Andrew Shamiya và Zhibin Cao.</p>
+<p>Khi chúng ta tiếp tục chuỗi năm phần về tối ưu hóa chi phí cho các khối lượng công việc generative AI trên AWS, bài đăng thứ ba này chuyển trọng tâm sang Amazon Bedrock. Trong các bài viết trước, chúng tôi đã khám phá các nguyên tắc <a href="https://aws.amazon.com/blogs/aws-cloud-financial-management/optimizing-cost-for-generative-ai-with-aws/">Cloud Financial Management principles on generative AI adoption</a> và các chiến lược phát triển mô hình tùy chỉnh bằng <a href="https://aws.amazon.com/blogs/aws-cloud-financial-management/optimizing-cost-for-developing-custom-ai-models-with-amazon-ec2-and-sagemaker-ai/">Amazon EC2 and Amazon SageMaker AI</a>. Hôm nay, chúng tôi sẽ hướng dẫn bạn các kỹ thuật tối ưu hóa chi phí cho Amazon Bedrock — từ việc đưa ra quyết định sáng suốt về pricing model, lựa chọn mô hình, tối ưu hóa knowledge base, prompt caching, cho đến Automated Reasoning. Dù bạn mới bắt đầu hay đang tìm cách tối ưu hóa việc triển khai Amazon Bedrock hiện có, những kỹ thuật này sẽ giúp bạn cân bằng giữa năng lực và chi phí trong khi vẫn tận dụng sự tiện lợi của các mô hình AI được quản lý.</p>
+<h3 id="amazon-bedrock-là-gì"><strong>Amazon Bedrock là gì?</strong></h3>
+<p>Amazon Bedrock là một dịch vụ được quản lý hoàn toàn, cung cấp quyền truy cập vào các foundation models (FMs) hàng đầu từ nhiều công ty AI thông qua một API thống nhất. Điều này giúp các nhà phát triển xây dựng và mở rộng các ứng dụng generative AI mà không cần quản lý hạ tầng phức tạp. Các lợi ích chính bao gồm: khả năng chuyển đổi mô hình liền mạch, bảo mật cấp doanh nghiệp, khả năng customize and fine-tune models, và tích hợp trực tiếp với các dịch vụ AWS khác. Amazon Bedrock mang đến nhiều công cụ mạnh mẽ để giúp bạn cân bằng giữa chi phí và hiệu suất.</p>
+<h3 id="inference-khối-xây-dựng-mới-trong-các-ứng-dụng-hiện-đại"><strong>Inference, khối xây dựng mới trong các ứng dụng hiện đại</strong></h3>
+<p>Tại AWS re:Invent 2024 – CEO Keynote with Matt Garman), Giám đốc điều hành Matt Garman đã giới thiệu một sự thay đổi về cách chúng ta nhìn nhận kiến trúc ứng dụng: đặt <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/inference-how.html">inference</a> như một khối xây dựng cơ bản của các ứng dụng hiện đại, bên cạnh compute, storage và database (listen to Matt’s keynote presentation, <a href="https://www.youtube.com/watch?v=LY7m5LQliAo&amp;t=4348s">AWS re:Invent 2024 – CEO Keynote with Matt Garman</a>). Khi bạn ngày càng tích hợp khả năng generative AI vào quy trình vận hành, việc quản lý và tối ưu hóa chi phí suy luận sẽ trở nên quan trọng như quản lý chi phí đám mây truyền thống. Để hỗ trợ xu hướng này, AWS đã giới thiệu  <a href="https://aws.amazon.com/about-aws/whats-new/2024/11/amazon-bedrock-cost-allocation-tags-inference-profiles">inference-level Cost Allocation Tags</a>, cung cấp khả năng hiển thị chi tiết về chi phí suy luận. trực quan hóa và phân tích chi phí ở cấp độ inference, đồng thời đưa ra quyết định dựa trên dữ liệu để chọn mô hình phù hợp.</p>
+<h3 id="mô-hình-định-giá-linh-hoạt-cho-mọi-trường-hợp-sử-dụng"><strong>Mô hình định giá linh hoạt cho mọi trường hợp sử dụng</strong></h3>
+<p>Mô hình  <a href="https://aws.amazon.com/bedrock/pricing/">pricing model</a> linh hoạt của Amazon Bedrock bao gồm ba tùy chọn chính: <strong>1) On-Demand</strong> cho sự linh hoạt trả tiền theo mức sử dụng, <strong>2) Provisioned Throughput</strong> mang lại mức tiết kiệm 40–60% thông qua cam kết trong một hoặc sáu tháng, và <strong>3) batch processing</strong> có thể cung cấp mức giá thấp hơn tới 50% so với on-demand. Việc chọn lựa tùy chọn giá tối ưu là rất quan trọng đối với thành công của bạn vì nó ảnh hưởng trực tiếp đến kết quả tài chính và hiệu quả vận hành. Bạn có thể tối ưu hóa chi tiêu trong khi vẫn duy trì chất lượng dịch vụ bằng cách chọn tùy chọn phù hợp nhất: On-Demand cho khối lượng công việc biến động, Provisioned Throughput cho các mô hình sử dụng ổn định, hoặc Batch processing cho các hoạt động không yêu cầu thời gian xử lý nhanh. Sự linh hoạt này hỗ trợ nhiều giai đoạn triển khai AI khác nhau, cho phép phân bổ tài nguyên hợp lý, ngăn ngừa tình trạng cung cấp vượt mức và đảm bảo khả năng dự đoán ngân sách tốt hơn. Việc đưa ra quyết định về giá một cách có thông tin là điều cần thiết, vì lựa chọn sai có thể dẫn đến chi phí không cần thiết, ảnh hưởng đến cả hiệu quả hoạt động và kết quả tài chính cuối cùng.</p>
+<h3 id="lựa-chọn-mô-hình-chiến-lược"><strong>Lựa chọn mô hình chiến lược</strong></h3>
+<p><img src="#ZgotmplZ" alt=""></p>
+<p>Hình 1. Amazon Bedrock cung cấp danh mục mô hình được quản lý toàn diện rộng nhất từ các công ty AI hàng đầu.</p>
+<p>Việc lựa chọn mô hình trong Amazon Bedrock là một quyết định mang tính chiến lược có thể ảnh hưởng đến chi phí, hiệu quả và kết quả hiệu suất. Amazon Bedrock cung cấp quyền truy cập vào các foundation models đa dạng từ các nhà lãnh đạo trong ngành như Anthropic, Meta, Mistral AI và Amazon. Ngoài các mô hình có sẵn từ những nhà cung cấp đó, bạn có thể tận dụng hơn 100 mô hình khác trong Amazon Bedrock Marketplace. Thay vì cam kết với một mô hình hoặc một nhà cung cấp duy nhất, bạn có thể tận dụng tính linh hoạt của Amazon Bedrock để chuyển đổi liền mạch giữa các mô hình với những thay đổi mã tối thiểu. Khi các mô hình mới hơn, hiệu quả hơn được phát hành, bạn có thể dễ dàng chuyển đổi để tiết kiệm chi phí và tăng hiệu suất. Khả năng xử lý hàng loạt (batch processing) của nền tảng càng tăng cường lợi thế này bằng cách cho phép đánh giá liên tục các mô hình mới khi chúng có sẵn, đảm bảo các giải pháp luôn được tối ưu theo thời gian và duy trì lợi thế cạnh tranh trong bối cảnh AI phát triển nhanh chóng. Cách tiếp cận chiến lược này đối với sự đa dạng và đánh giá mô hình giúp bạn tối đa hóa khoản đầu tư AI trong khi vẫn duy trì sự linh hoạt trong vận hành.</p>
+<p>Một yếu tố khác cần xem xét khi lựa chọn mô hình là thời gian phản hồi. Một số mô hình của Amazon Bedrock hỗ trợ cấu hình được tối ưu hóa độ trễ, xem <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/latency-optimized-inference.html">Optimize model inference for latency</a>, giúp cung cấp thời gian phản hồi nhanh hơn so với hiệu suất tiêu chuẩn. Các mô hình này cải thiện hiệu quả và khiến các ứng dụng AI sinh của bạn phản hồi nhanh hơn. Hiện tại, bạn có thể sử dụng các cấu hình được tối ưu hóa độ trễ cho Amazon Nova Pro, Claude 3.5 Haiku của Anthropic và Llama 3.1 405B và 70B của Meta, chạy nhanh hơn trên AWS so với bất kỳ nơi nào khác.</p>
+<h3 id="tận-dụng-knowledge-bases"><strong>Tận dụng Knowledge Bases</strong></h3>
+<p>Amazon Bedrock hỗ trợ việc bao gồm các Knowledge Base cho phép bạn tạo ra các ứng dụng AI sinh sinh tùy chỉnh, có độ chính xác cao, độ trễ thấp và an toàn bằng cách kết hợp thông tin ngữ cảnh từ các nguồn dữ liệu của riêng bạn. Knowledge Base, còn được gọi là RAG (retrieval augmented generation), có thể mang lại các phản hồi chính xác, phù hợp và cập nhật hơn. Việc sử dụng Knowledge Base giúp bạn nhận được các câu trả lời chất lượng cao hơn, từ đó tiết kiệm chi phí nhờ giảm số lượng prompt và phản hồi cần thiết để có được câu trả lời phù hợp. Yếu tố chính để tối ưu hóa Knowledge Base là quản lý dữ liệu và tần suất lập chỉ mục. Phí lập chỉ mục (indexing fees) là yếu tố chi phí chính và được tính theo mỗi đối tượng hoặc giờ OpenSearch Compute Unit (OCU), tùy thuộc vào cơ sở dữ liệu vector được sử dụng.</p>
+<p>Ba điều bạn có thể làm để giảm thiểu các chi phí này là:</p>
+<ol>
+<li>
+<p>Chỉ bao gồm dữ liệu liên quan trong (các) nguồn dữ liệu của bạn để tránh lập chỉ mục những dữ liệu không đóng góp vào giải pháp của bạn.</p>
+</li>
+<li>
+<p>Tránh cập nhật hoặc chỉnh sửa các tệp đã được lập chỉ mục. Nếu một tệp bị chỉnh sửa, tệp đó sẽ được lập chỉ mục lại, điều này sẽ phát sinh thêm chi phí.</p>
+</li>
+<li>
+<p>Xóa dữ liệu không còn cần thiết để đơn giản hóa chỉ mục của bạn. Việc này sẽ giảm tổng chi phí lập chỉ mục và tăng tốc độ xử lý các yêu cầu đối với dữ liệu đã lập chỉ mục.</p>
+</li>
+</ol>
+<p>Bằng cách tuân theo các thực tiễn này, bạn có thể đạt được giảm chi phí và tốc độ lập chỉ mục nhanh hơn cho các triển khai Knowledge Base của mình.</p>
+<p><img src="#ZgotmplZ" alt=""></p>
+<p>Hình 2. Amazon Bedrock có hỗ trợ gốc cho Retrieval Augmented Generation (RAG)</p>
+<h3 id="tùy-chỉnh-để-nâng-cao-hiệu-suất"><strong>Tùy chỉnh để nâng cao hiệu suất</strong></h3>
+<p>Những tiến bộ gần đây trong khả năng fine-tuning đã giúp việc tối ưu hóa hiệu suất mô hình trở nên dễ dàng hơn bao giờ hết. Giờ đây, bạn có thể <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html">customize and fine-tune models</a>, bằng cách sử dụng dữ liệu của riêng mình mà không cần phải viết mã. Điều này giảm nhu cầu huấn luyện lại mô hình liên tục và mang lại một giải pháp vận hành hiệu quả hơn, ít tốn kém hơn nhờ vào chất lượng đầu ra cao hơn.</p>
+<h3 id="distillation-để-có-hiệu-suất-tiết-kiệm-chi-phí-hơn"><strong>Distillation để có hiệu suất tiết kiệm chi phí hơn</strong></h3>
+<p>Tính năng  <a href="https://aws.amazon.com/bedrock/model-distillation/">Model Distillation</a> của Amazon Bedrock đại diện cho một cơ hội để cân bằng giữa hiệu suất và hiệu quả. Thông qua một quá trình chuyển giao tri thức tinh vi từ các mô hình “giáo viên” lớn sang các mô hình “học sinh” nhỏ hơn, công nghệ này cho phép bạn đạt được sự tối ưu hóa mà không ảnh hưởng đáng kể đến độ chính xác. Quy trình này tạo ra các mô hình đã được chưng cất (distilled models) có thể hoạt động nhanh hơn tới 500% và tiết kiệm chi phí lên đến 75% so với mô hình ban đầu, với mức mất độ chính xác dưới 2% cho các trường hợp sử dụng như RAG. Tính năng này giải quyết sự đánh đổi truyền thống giữa khả năng của mô hình và hiệu quả vận hành, giúp các ứng dụng AI tiên tiến trở nên dễ tiếp cận và khả thi về mặt kinh tế hơn cho mọi quy mô ngân sách.</p>
+<p><img src="#ZgotmplZ" alt=""><br>
+Hình 3. So sánh hiệu suất của các mô hình tiên tiến với các mô hình tiết kiệm chi phí cho trường hợp sử dụng của bạn bằng phương pháp chưng cất mô hình</p>
+<h3 id="prompt-caching-để-giảm-chi-phí-và-độ-trễ"><strong>Prompt Caching để giảm chi phí và độ trễ</strong></h3>
+<p>Khả năng <a href="https://aws.amazon.com/bedrock/prompt-caching/">prompt caching</a> của Amazon Bedrock mang lại lợi ích vượt trội về chi phí và hiệu năng. Bằng cách lưu vào bộ nhớ đệm (cache) các prompt được sử dụng thường xuyên trên nhiều lần gọi API, tính năng này loại bỏ nhu cầu xử lý lại các yêu cầu giống hệt nhau. Kết quả là giảm tới 90% chi phí và giảm 85% độ trễ cho các mô hình được hỗ trợ. Prompt caching hoạt động bằng cách tái sử dụng các tiền tố (prefix) của prompt đã được lưu trong bộ nhớ đệm, bỏ qua việc phải xử lý lại các tiền tố trùng khớp, từ đó giảm đáng kể tài nguyên tính toán cần thiết để tạo đầu ra mà vẫn duy trì chất lượng phản hồi. Tối ưu hóa này giúp việc triển khai AI ở quy mô doanh nghiệp trở nên kinh tế hơn và phản hồi nhanh hơn.</p>
+<h3 id="automated-reasoning-để-cải-thiện-độ-chính-xác"><strong>Automated Reasoning để Cải Thiện Độ Chính Xác</strong></h3>
+<p>Thông qua việc tích hợp <a href="https://aws.amazon.com/bedrock/guardrails/">Automated Reasoning</a>, Amazon Bedrock mang đến cơ hội để nâng cao độ chính xác của AI tạo sinh (generative AI) và tối ưu hóa chi phí. Automated Reasoning có sẵn thông qua Amazon Bedrock Guardrails, và sử dụng các phương pháp toán học để đảm bảo tính chính xác trong những lĩnh vực quan trọng như nhân sự, tài chính và tuân thủ (compliance). Quy trình chứng minh toán học này không chỉ tăng độ tin cậy của phản hồi, mà còn cải thiện hiệu quả vận hành bằng cách giảm số lượng prompt mà bạn cần nhập để có được một câu trả lời chính xác. Hơn nữa, bằng cách cung cấp bằng chứng về độ chính xác và giải thích logic cho từng phản hồi, hệ thống giúp bạn đẩy nhanh việc ứng dụng AI trong các trường hợp yêu cầu độ chính xác cao, đồng thời tiết kiệm nguồn lực vốn thường được dùng cho xác minh thủ công và sửa lỗi. Khi kết hợp giữa độ chính xác cao hơn, chi phí tương tác thấp hơn, và khả năng xác minh tự động, mức tiết kiệm chi phí tổng thể có thể trở nên đáng kể.</p>
+<h3 id="kết-luận"><strong>Kết Luận</strong></h3>
+<p>Bằng cách triển khai các chiến lược tối ưu hóa được đề cập ở trên, bạn có thể giảm đáng kể chi phí trong khi vẫn duy trì hoặc cải thiện hiệu suất. Điều quan trọng là liên tục đánh giá và điều chỉnh cách tiếp cận của bạn khi các tính năng và khả năng mới được phát hành. Với tính linh hoạt và bộ tính năng toàn diện, Amazon Bedrock là nền tảng lý tưởng để tối ưu hóa việc triển khai generative AI của bạn.</p>
+<p>Chúng tôi đã đề cập đến nhiều phương pháp khác nhau để tối ưu hóa chi phí phát triển ứng dụng generative AI trên Amazon Bedrock. Trong bài viết tiếp theo, chúng tôi sẽ khám phá các chiến lược tối ưu chi phí cho Amazon Q, bao gồm lựa chọn cấp giá (pricing tier selection), quản lý người dùng (user management), và lập chỉ mục nội dung (content indexing). Hãy cùng theo dõi để tìm hiểu cách tận dụng tối đa trợ lý được hỗ trợ bởi AI của AWS, đồng thời duy trì hiệu quả chi phí.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Adam Richter Adam Richter là Kiến trúc sư Giải pháp Tối ưu hóa Cấp cao (Senior Optimization Solutions Architect) tại AWS OPTICS, nơi ông tập trung vào tối ưu hóa chi phí AI và các phương pháp hay nhất về FinOps. Ông đã góp phần định hình các tính năng hướng đến khách hàng như Amazon Q Business và Amazon Q Developer, đồng thời thường xuyên chia sẻ chuyên môn của mình với tư cách là diễn giả tại AWS re và các sự kiện trong ngành khác. Adam cũng đại diện cho AWS trong Nhóm Làm việc về AI của FinOps Foundation, đóng góp vào các cuộc thảo luận rộng hơn về hoạt động tài chính trong lĩnh vực AI.</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"><a href="https://aws.amazon.com/blogs/aws-cloud-financial-management/author/bowewang/">Bowen Wang</a>Bowen Wang là Quản lý Tiếp thị Sản phẩm Cấp cao (Principal Product Marketing Manager) cho các dịch vụ Thanh toán và Quản lý Chi phí AWS (AWS Billing and Cost Management). Cô tập trung vào việc giúp các nhà lãnh đạo tài chính và kinh doanh hiểu rõ hơn về giá trị của điện toán đám mây và các cách tối ưu hóa quản lý tài chính trên nền tảng đám mây. Trong sự nghiệp trước đây, cô đã hỗ trợ một công ty khởi nghiệp công nghệ mở rộng vào thị trường Trung Quốc.</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../../3-blogstranslated/3.3-blog3/" title="Blog 3"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../../4-eventparticipated/" title="Events Participated" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../js/clipboard.min.js?1765285578"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1765285578"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1765285578"></script>
+    <script src="../../../js/jquery.sticky.js?1765285578"></script>
+    <script src="../../../js/featherlight.min.js?1765285578"></script>
+    <script src="../../../js/highlight.pack.js?1765285578"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1765285578"></script>
+    <script src="../../../js/learn.js?1765285578"></script>
+    <script src="../../../js/hugo-learn.js?1765285578"></script>
+
+    <link href="../../../mermaid/mermaid.css?1765285578" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1765285578"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>
+

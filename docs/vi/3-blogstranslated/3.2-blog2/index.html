@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.150.0">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="thienlh@thienlu.com" />
+
+    <link rel="icon" href="../../../images/favicon.png" type="image/png">
+
+    <title>Blog 2 :: Báo cáo thực tập</title>
+
+    
+    <link href="../../../css/nucleus.css?1765285578" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1765285578" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1765285578" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1765285578" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1765285578" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1765285578" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1765285578" rel="stylesheet">
+    <link href="../../../css/theme.css?1765285578" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1765285578" rel="stylesheet">
+    
+    <link href="../../../css/theme-workshop.css?1765285578" rel="stylesheet">
+    
+    
+
+    <script src="../../../js/jquery-3.3.1.min.js?1765285578"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../../vi/3-blogstranslated/3.2-blog2/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../../js/lunr.min.js?1765285578"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1765285578"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/\/vi";
+    
+</script>
+<script type="text/javascript" src="../../../js/search.js?1765285578"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/vi/1-worklog/"
+  title="Nhật ký công việc"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/">
+     <b> 1. </b> Nhật ký công việc 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/1-worklog/1.1-week1/"
+  title="Worklog Tuần 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.1-week1/">
+     <b> 1.1. </b> Worklog Tuần 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.2-week2/"
+  title="Worklog Tuần 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.2-week2/">
+     <b> 1.2. </b> Worklog Tuần 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.3-week3/"
+  title="Worklog Tuần 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.3-week3/">
+     <b> 1.3. </b> Worklog Tuần 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.4-week4/"
+  title="Worklog Tuần 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.4-week4/">
+     <b> 1.4. </b> Worklog Tuần 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.5-week5/"
+  title="Worklog Tuần 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.5-week5/">
+     <b> 1.5. </b> Worklog Tuần 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.6-week6/"
+  title="Worklog Tuần 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.6-week6/">
+     <b> 1.6. </b> Worklog Tuần 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.7-week7/"
+  title="Worklog Tuần 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.7-week7/">
+     <b> 1.7. </b> Worklog Tuần 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.8-week8/"
+  title="Worklog Tuần 8"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.8-week8/">
+     <b> 1.8. </b> Worklog Tuần 8 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.9-week9/"
+  title="Worklog Tuần 9"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.9-week9/">
+     <b> 1.9. </b> Worklog Tuần 9 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.10-week10/"
+  title="Worklog Tuần 10"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.10-week10/">
+     <b> 1.10. </b> Worklog Tuần 10 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.11-week11/"
+  title="Worklog Tuần 11"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.11-week11/">
+     <b> 1.11. </b> Worklog Tuần 11 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.12-week12/"
+  title="Worklog Tuần 12"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.12-week12/">
+     <b> 1.12. </b> Worklog Tuần 12 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/2-proposal/"
+  title="Bản đề xuất"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/2-proposal/">
+     <b> 2. </b> Bản đề xuất 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/3-blogstranslated/"
+  title="Các bài blogs đã dịch"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/">
+     <b> 3. </b> Các bài blogs đã dịch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/4-eventparticipated/"
+  title="Các events đã tham gia"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/">
+     <b> 4. </b> Các events đã tham gia 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.3-event3/"
+  title="Event 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.3-event3/">
+     <b> 4.3. </b> Event 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.1-workshop-overview/"
+  title="Giới thiệu"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Giới thiệu 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2-prerequiste/"
+  title="Các bước chuẩn bị"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.2-prerequiste/">
+    <b> 5.2. </b>Các bước chuẩn bị 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-backend/"
+  title="Triển khai Backend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-backend/">
+    <b> 5.3. </b>Triển khai Backend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-backend/5.3.1-amazondynamodb/"
+  title="Amazon DynamoDB"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-backend/5.3.1-amazondynamodb/">
+    <b> 5.3.1 </b>Amazon DynamoDB 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-backend/5.3.2-amazoncognito/"
+  title="Amazon Cognito"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-backend/5.3.2-amazoncognito/">
+    <b> 5.3. </b>Amazon Cognito 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-backend/5.3.3-amazons3/"
+  title="Amazon S3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-backend/5.3.3-amazons3/">
+    <b> 5.3.3 </b>Amazon S3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-backend/5.3.4-lambdaapigateway/"
+  title="LAMBDA &#43; API GATEWAY"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-backend/5.3.4-lambdaapigateway/">
+    <b> 5.3.4 </b>LAMBDA &#43; API GATEWAY 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-frontend/"
+  title="Triển khai Frontend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-frontend/">
+     <b> 5.4. </b> Triển khai Frontend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-frontend/5.4.1-amazonamplify/"
+  title="Amazon Amplify"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-frontend/5.4.1-amazonamplify/">
+    <b> 5.4.1 </b>Amazon Amplify 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-frontend/5.4.2-cloudfrontwaf/"
+  title="Amazon CloudFornt &amp; WAF"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-frontend/5.4.2-cloudfrontwaf/">
+    <b> 5.4.2 </b>Amazon CloudFornt &amp; WAF 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-frontend/5.4.3-route53/"
+  title="Amazon Route53"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-frontend/5.4.3-route53/">
+    <b> 5.4.3 </b>Amazon Route53 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-ci-cd/"
+  title="CI/CD Pipeline"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-ci-cd/">
+     <b> 5.5. </b> CI/CD Pipeline 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6-cloud-watch/"
+  title="Cloud Watch"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.6-cloud-watch/">
+     <b> 5.6. </b> Cloud Watch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.7-clean-up/"
+  title="Dọn dẹp tài nguyên"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.7-clean-up/">
+    <b>5.7. </b>Dọn dẹp tài nguyên 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/6-self-evaluation/"
+  title="Tự đánh giá"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/6-self-evaluation/">
+     <b> 6. </b> Tự đánh giá 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/7-feedback/"
+  title="Chia sẻ, đóng góp ý kiến"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/7-feedback/">
+     <b> 7. </b> Chia sẻ, đóng góp ý kiến 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="https://thienluhoan.github.io/workshop-template/3-blogstranslated/3.2-blog2/"
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="https://thienluhoan.github.io/workshop-template/vi/3-blogstranslated/3.2-blog2/"
+                  selected
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../../vi/'>Báo cáo thực tập</a> > <a href='../../../vi/3-blogstranslated/'>Các bài blogs đã dịch</a> > Blog 2
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#flodesk-đang-thiết-kế-một-câu-chuyện-mới-cho-các-công-ty-khởi-nghiệp-như-thế-nào"><strong>Flodesk đang thiết kế một câu chuyện mới cho các công ty khởi nghiệp như thế nào</strong></a></li>
+        <li><a href="#đối-với-những-người-sáng-lập-flodesk-hộp-thư-đến-của-bạn-là-điều-cá-nhân"><strong>Đối với những người sáng lập Flodesk, hộp thư đến của bạn là điều cá nhân</strong></a></li>
+        <li><a href="#định-hình-lại-câu-chuyện-cho-các-startup"><strong>Định hình lại câu chuyện cho các startup</strong></a></li>
+        <li><a href="#xây-dựng-thương-hiệu-đáng-tin-cậy-với-aws"><strong>Xây dựng thương hiệu đáng tin cậy với AWS</strong></a></li>
+        <li><a href="#tương-lai-tươi-sáng-cho-doanh-nghiệp-nhỏ"><strong>Tương lai tươi sáng cho doanh nghiệp nhỏ</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 2
+            </h1>
+          
+
+        
+
+
+
+	<p><strong>by Bonnie McClure | on 25 MAR 2024 | in <a href="https://aws.amazon.com/blogs/startups/category/messaging/amazon-simple-email-service-ses/">Amazon Simple Email Service (SES)</a>, <a href="https://aws.amazon.com/blogs/startups/category/startup/">Startup</a>, <a href="https://aws.amazon.com/blogs/startups/category/startup-spotlight/">Startup Spotlight</a> | <a href="https://aws.amazon.com/blogs/startups/how-flodesk-is-designing-a-new-narrative-for-startups/">Permalink</a> | <a href="https://aws.amazon.com/vi/blogs/startups/how-flodesk-is-designing-a-new-narrative-for-startups/">Share</a></strong></p>
+<hr>
+<h3 id="flodesk-đang-thiết-kế-một-câu-chuyện-mới-cho-các-công-ty-khởi-nghiệp-như-thế-nào"><strong>Flodesk đang thiết kế một câu chuyện mới cho các công ty khởi nghiệp như thế nào</strong></h3>
+<p><img src="../../../images/3-BlogsTranslated/3.2-Blog2/Flodesk-Logo-1536x864-1-e1711385922117-300x67.png" alt="Flodesk Logo"></p>
+<h3 id="đối-với-những-người-sáng-lập-flodesk-hộp-thư-đến-của-bạn-là-điều-cá-nhân"><strong>Đối với những người sáng lập Flodesk, hộp thư đến của bạn là điều cá nhân</strong></h3>
+<img src="../../../images/3-BlogsTranslated/3.2-Blog2/Rebecca-Shostak-e1711395335277-298x300.jpg" style="float: right; margin: 0 0 20px 20px; width: 250px;">
+<p>Công ty khởi nghiệp Flodesk có trụ sở tại San Francisco, được thành lập vào đầu năm 2018, đang thiết kế những email mà mọi người yêu thích khi nhận được. Như đồng sáng lập kiêm Giám đốc Thương hiệu (Chief Brand Officer) Rebecca Shostak chia sẻ: &ldquo;Flodesk là phần mềm xây dựng mối quan hệ. Tôi muốn mọi người khai thác sức mạnh của những mối quan hệ thân mật, một-một mà họ có thể có với người theo dõi của mình.&rdquo;</p>
+<p>Nền tảng thiết kế của Rebecca bắt nguồn từ thế giới rock n&rsquo; roll; cô bắt đầu sự nghiệp bằng việc thiết kế hàng hóa cho một công ty cần — theo lời cô — &ldquo;một sự chạm nhẹ nữ tính&rdquo; cho các nghệ sĩ trong danh sách của họ. Đó là lần đầu tiên cô được tiếp xúc với việc thiết kế cho nhiều loại thương hiệu khác nhau — và tạo ra những thiết kế đẹp mắt phù hợp với nhiều phong cách. Những kỹ năng đó là hành trang Rebecca mang theo khi bắt đầu dự án kinh doanh riêng đầu tiên: một cửa hàng mẫu thiết kế dành cho nền tảng email phổ biến MailChimp.</p>
+<p>&ldquo;Tôi luôn muốn có doanh nghiệp của riêng mình. Tôi đến từ Silicon Valley, và tôi có máu kinh doanh từ cha mình. Tôi muốn khởi nghiệp. Tôi nhìn thấy một thị trường ngách cho các mẫu Photoshop dành cho nhiếp ảnh gia đám cưới. Và nhu cầu cho nó rất lớn,&rdquo; Rebecca giải thích. Khi cô thấy khách hàng gặp khó khăn trong việc tích hợp thiết kế của mình vào nền tảng MailChimp, một ý tưởng lớn hơn đã hình thành: một nền tảng cho phép mọi người dễ dàng tạo các email có thương hiệu, bắt mắt. &ldquo;Tất cả các công ty tiếp thị qua email đều hướng đến tính hiệu quả, tập trung vào quy trình và tích hợp. Họ không tập trung vào thương hiệu và thiết kế,&rdquo; Rebecca nói. &ldquo;Tôi đã nghĩ, &lsquo;Mình phải làm điều này.&rsquo; Gần như đó là một tiếng gọi thiêng liêng.&rdquo;</p>
+<p>Trong khi đó, <strong>Martha Bitar</strong>, đồng sáng lập kiêm CEO của Flodesk, đang làm việc trong lĩnh vực quản lý quan hệ khách hàng (CRM) cho các chủ doanh nghiệp nhỏ, trong cùng một thị trường tương tự. &ldquo;Martha đang ngâm mình trong cùng hệ sinh thái khách hàng mà tôi đang hoạt động, chỉ là ở một hướng khác,&rdquo; Rebecca giải thích. Cả Martha và Rebecca đều cảm nhận một vấn đề chung trong thị trường của họ: &ldquo;Chúng tôi thấy có những người kiếm được hàng triệu đô với dịch vụ của họ — website của họ trông tuyệt vời, Instagram trông tuyệt vời, hình ảnh trông tuyệt vời — nhưng email thì tệ hại.&rdquo;</p>
+<h3 id="định-hình-lại-câu-chuyện-cho-các-startup"><strong>Định hình lại câu chuyện cho các startup</strong></h3>
+<p>Đối với Flodesk, mọi thứ luôn xoay quanh việc đảo ngược câu chuyện truyền thống. Công ty có nền tảng vững chắc trong thiết kế — họ là một trong những người tiên phong trong việc mơ về những email đẹp mắt có thể trở thành hiện thực. Theo Rebecca, nghịch lý giữa &ldquo;đẹp&rdquo; và &ldquo;email&rdquo; chính là nền tảng hình thành Flodesk: &ldquo;Chúng tôi đang lấy những sản phẩm mềm mại vốn từng bị xem là thô kệch, xấu xí, khó sử dụng và thiếu hấp dẫn, rồi biến chúng thành những thứ mà thị trường nhỏ — vốn tập trung mạnh vào thương hiệu — chưa từng nghĩ có thể trở nên quyến rũ đến vậy.&rdquo;</p>
+<p>Nhưng sự đột phá của công ty không chỉ dừng lại ở thiết kế. Khi Martha và Rebecca cùng nhau tạo ra nguyên mẫu vào khoảng tháng 1 năm 2018, họ đã chọn một con đường tương đối ít người đi đối với các công ty khởi nghiệp. Rebecca kể lại: &ldquo;Chúng tôi đã nghĩ, nếu chúng tôi trình bày ý tưởng này và thực hiện mà không cần tài trợ thì sao? Nếu chúng tôi có thể xác thực nó và đưa phần mềm vào hoạt động mà không cần vốn đầu tư mạo hiểm thì sao?&rdquo; Dựa trên ý tưởng này, vào mùa hè năm 2019, Flodesk đã có một nguyên mẫu. Khi một người bạn có sức ảnh hưởng của Rebecca xây dựng và gửi email bằng Flodesk, thêm một quảng cáo ở cuối email, các yêu cầu dùng thử bắt đầu đổ về. Rebecca nói: &ldquo;Flodesk đã tự ra mắt từ rất lâu trước khi chúng tôi thực sự ra mắt&rdquo;.</p>
+<h3 id="xây-dựng-thương-hiệu-đáng-tin-cậy-với-aws"><strong>Xây dựng thương hiệu đáng tin cậy với AWS</strong></h3>
+<p>Flodesk đã chọn Amazon Web Services (AWS) làm đối tác ngay từ đầu — nền tảng của họ được xây dựng trên <a href="https://aws.amazon.com/ses/">Amazon Simple Email Service (SES).</a> &ldquo;Tôi không thể tưởng tượng Flodesk sẽ ra sao nếu không có AWS đồng hành,&rdquo; Rebecca nói. &ldquo;Họ giống như người khổng lồ mà chúng tôi đang đứng trên vai về mặt công nghệ.&rdquo;</p>
+<p>Trong giai đoạn đầu, công ty gặp nhiều vấn đề về hạ tầng khi lượng người dùng tăng đột biến. Rebecca chia sẻ: &ldquo;Chúng tôi bắt đầu với AWS và phát triển dựa trên đó. Ban đầu, chính sách của chúng tôi rất mở vì muốn thu hút càng nhiều người dùng càng tốt, nhưng điều đó lại khiến nhiều kẻ lừa đảo lọt vào. Khi đó, chúng tôi còn quá mới và mọi thứ diễn ra quá nhanh — chúng tôi chưa kịp thiết lập hàng rào bảo mật để loại bỏ những kẻ xấu.&rdquo; Rebecca đã phải thức nhiều đêm để gọi điện cho đội hỗ trợ AWS nhằm xử lý sự cố. &ldquo;Những ngày đầu có rất nhiều lần suýt gặp rắc rối lớn,&rdquo; cô nói. &ldquo;Chúng tôi từng bị tạm dừng máy chủ vì hành vi gian lận. Nhưng kể từ khi hợp tác chặt chẽ với AWS và được họ tư vấn về cách xây dựng đội ngũ tin cậy và an toàn mạnh mẽ hơn, chúng tôi đã đạt được vị thế như hiện tại. Tôi thật sự không thể tưởng tượng câu chuyện của mình nếu thiếu AWS.&rdquo;</p>
+<p>Tony Silva, người phụ trách danh mục startup của Flodesk tại AWS, là người đã trả lời những cuộc gọi đêm khuya từ Rebecca. Hiện Tony vẫn hợp tác cùng nhóm kỹ sư của Flodesk trên toàn cầu để xử lý mọi vấn đề có thể phát sinh. Tony chia sẻ: &ldquo;Với Flodesk, mối quan hệ của chúng tôi giờ không chỉ ở góc độ kỹ thuật. Đó là về toàn bộ cơ sở hạ tầng của họ — giúp họ giảm chi phí, đảm bảo kiến trúc đúng đắn, và cung cấp mọi loại hỗ trợ, dù là ra thị trường, quan hệ cá nhân hay chiến lược tiếp cận.&rdquo;</p>
+<h3 id="tương-lai-tươi-sáng-cho-doanh-nghiệp-nhỏ"><strong>Tương lai tươi sáng cho doanh nghiệp nhỏ</strong></h3>
+<p>Hiện nay, với 70.000 khách hàng, hơn 20 triệu đô doanh thu định kỳ hằng năm, và 35 thành viên trên toàn thế giới, Rebecca vẫn đang thích nghi với sự tăng trưởng khổng lồ: &ldquo;Đôi khi tôi vẫn cảm thấy như mình chẳng biết mình đang làm gì. Nhưng tôi nghĩ chúng tôi luôn giữ tinh thần tự lực.&rdquo;</p>
+<p>Rebecca cho rằng phần lớn thành công của Flodesk đến từ các nguyên tắc cốt lõi khi thành lập công ty. Tập trung vào việc giải quyết vấn đề cho khách hàng vẫn là kim chỉ nam của họ. &ldquo;Chúng tôi bắt đầu với ý tưởng của người sáng lập. Chúng tôi đã có sự phù hợp giữa sản phẩm và thị trường (product-market fit) trước khi viết một dòng mã nào. Hãy bắt đầu với vấn đề, không phải giải pháp. Chúng tôi tập trung vào nhóm khách hàng bị các công ty lớn bỏ quên. Chúng tôi muốn tạo ra một trải nghiệm tự phục vụ — nơi người dùng không phải liên hệ qua lại với đội của chúng tôi — và giá cả cũng phải phù hợp,&rdquo; cô nói.</p>
+<p>Với Rebecca, tương lai của các doanh nghiệp nhỏ là &ldquo;vô cùng phấn khích&rdquo;: &ldquo;Tôi thật sự tin rằng các doanh nghiệp nhỏ và những người sáng tạo điều hành chúng sẽ là những người định hình tương lai. Và tương lai đó khiến tôi rất hào hứng,&rdquo; cô chia sẻ. Tầm nhìn của cô dành cho Flodesk cũng rất rõ ràng: &ldquo;Tôi muốn Flodesk trở thành cái tên quen thuộc khi người ta nghĩ đến việc phát triển doanh nghiệp. Tôi hình dung rằng trong mỗi gia đình, bạn có tài khoản Amazon Prime, bạn có một doanh nghiệp nhỏ, và bạn có tài khoản Flodesk.&rdquo;</p>
+<p>Lời khuyên của Rebecca dành cho các nhà sáng lập startup? &ldquo;Hãy linh hoạt và sáng tạo. Đôi khi những ý tưởng tuyệt vời nhất đến từ những nơi tưởng chừng giản dị nhất. Hãy dùng trí tưởng tượng và sáng tạo của bạn.&rdquo;</p>
+<hr>
+<table>
+  <thead>
+      <tr>
+          <th><img src="../../../images/3-BlogsTranslated/3.2-Blog2/Bonnie-headshot-SQ.jpg" alt="Bonnie McClure"></th>
+          <th><strong>Bonnie McClure</strong> là biên tập viên chuyên tạo nội dung dễ tiếp cận và hấp dẫn cho mọi đối tượng và nền tảng. Cô tận tâm cung cấp hướng dẫn biên tập toàn diện để mang lại trải nghiệm người dùng liền mạch. Khi không làm việc, cô dành thời gian cho hai chú chó lớn của mình, luyện tập may vá, hoặc thử nghiệm các công thức nấu ăn mới trong bếp.</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../../vi/3-blogstranslated/3.1-blog1/" title="Blog 1"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../../vi/3-blogstranslated/3.3-blog3/" title="Blog 3" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../js/clipboard.min.js?1765285578"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1765285578"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1765285578"></script>
+    <script src="../../../js/jquery.sticky.js?1765285578"></script>
+    <script src="../../../js/featherlight.min.js?1765285578"></script>
+    <script src="../../../js/highlight.pack.js?1765285578"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1765285578"></script>
+    <script src="../../../js/learn.js?1765285578"></script>
+    <script src="../../../js/hugo-learn.js?1765285578"></script>
+
+    <link href="../../../mermaid/mermaid.css?1765285578" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1765285578"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,2648 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.150.0">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="thienlh@thienlu.com" />
+
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <title>Week 12 Worklog :: Internship Report</title>
+
+    
+    <link href="../../css/nucleus.css?1765285578" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1765285578" rel="stylesheet">
+    <link href="../../css/hybrid.css?1765285578" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1765285578" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1765285578" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1765285578" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1765285578" rel="stylesheet">
+    <link href="../../css/theme.css?1765285578" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1765285578" rel="stylesheet">
+    
+    <link href="../../css/theme-workshop.css?1765285578" rel="stylesheet">
+    
+    
+
+    <script src="../../js/jquery-3.3.1.min.js?1765285578"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../1-worklog/1.12-week12/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1765285578"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1765285578"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1765285578"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/1-worklog/"
+  title="Worklog"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../1-worklog/">
+     <b> 1. </b> Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/1-worklog/1.1-week1/"
+  title="Week 1 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.1-week1/">
+     <b> 1.1. </b> Week 1 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.2-week2/"
+  title="Week 2 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.2-week2/">
+     <b> 1.2. </b> Week 2 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.3-week3/"
+  title="Week 3 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.3-week3/">
+     <b> 1.3. </b> Week 3 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.4-week4/"
+  title="Week 4 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.4-week4/">
+     <b> 1.4. </b> Week 4 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.5-week5/"
+  title="Week 5 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.5-week5/">
+     <b> 1.5. </b> Week 5 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.6-week6/"
+  title="Week 6 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.6-week6/">
+     <b> 1.6. </b> Week 6 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.7-week7/"
+  title="Week 7 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.7-week7/">
+     <b> 1.7. </b> Week 7 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.8-week8/"
+  title="Week 8 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.8-week8/">
+     <b> 1.8. </b> Week 8 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.9-week9/"
+  title="Week 9 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.9-week9/">
+     <b> 1.9. </b> Week 9 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.10-week10/"
+  title="Week 10 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.10-week10/">
+     <b> 1.10. </b> Week 10 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.11-week11/"
+  title="Week 11 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.11-week11/">
+     <b> 1.11. </b> Week 11 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.12-week12/"
+  title="Week 12 Worklog"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../1-worklog/1.12-week12/">
+     <b> 1.12. </b> Week 12 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/2-proposal/"
+  title="Proposal"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../2-proposal/">
+     <b> 2. </b> Proposal 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/3-blogstranslated/"
+  title="Translated Blogs"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/">
+     <b> 3. </b> Translated Blogs 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+        
+            
+<li
+  data-nav-id="/3-blogstranslated/3.1-blog1/aws-ra-m%E1%BA%AFt-chuy%E1%BA%BFn-l%C6%B0u-di%E1%BB%85n-genai-loft-nh%E1%BA%B1m-th%C3%BAc-%C4%91%E1%BA%A9y-%C4%91%E1%BB%95i-m%E1%BB%9Bi-s%C3%A1ng-t%E1%BA%A1o-ai-trong-c%E1%BB%99ng-%C4%91%E1%BB%93ng-kh%E1%BB%9Fi-nghi%E1%BB%87p-v%C3%A0-nh%C3%A0-ph%C3%A1t-tri%E1%BB%83n-to%C3%A0n-c%E1%BA%A7u/"
+  title=""
+  class="dd-item "
+>
+  <a href="../../3-blogstranslated/3.1-blog1/aws-ra-m%E1%BA%AFt-chuy%E1%BA%BFn-l%C6%B0u-di%E1%BB%85n-genai-loft-nh%E1%BA%B1m-th%C3%BAc-%C4%91%E1%BA%A9y-%C4%91%E1%BB%95i-m%E1%BB%9Bi-s%C3%A1ng-t%E1%BA%A1o-ai-trong-c%E1%BB%99ng-%C4%91%E1%BB%93ng-kh%E1%BB%9Fi-nghi%E1%BB%87p-v%C3%A0-nh%C3%A0-ph%C3%A1t-tri%E1%BB%83n-to%C3%A0n-c%E1%BA%A7u/">
+     <i
+      class="fas fa-check read-icon"
+    ></i
+    >
+  </a>
+</li>
+      
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+        
+            
+<li
+  data-nav-id="/3-blogstranslated/3.3-blog3/t%E1%BB%91i-%C6%B0u-h%C3%B3a-chi-ph%C3%AD-khi-s%E1%BB%AD-d%E1%BB%A5ng-c%C3%A1c-m%C3%B4-h%C3%ACnh-n%E1%BB%81n-t%E1%BA%A3ng-v%E1%BB%9Bi-amazon-bedrock/"
+  title=""
+  class="dd-item "
+>
+  <a href="../../3-blogstranslated/3.3-blog3/t%E1%BB%91i-%C6%B0u-h%C3%B3a-chi-ph%C3%AD-khi-s%E1%BB%AD-d%E1%BB%A5ng-c%C3%A1c-m%C3%B4-h%C3%ACnh-n%E1%BB%81n-t%E1%BA%A3ng-v%E1%BB%9Bi-amazon-bedrock/">
+     <i
+      class="fas fa-check read-icon"
+    ></i
+    >
+  </a>
+</li>
+      
+  </ul>
+  
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/4-eventparticipated/"
+  title="Events Participated"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/">
+     <b> 4. </b> Events Participated 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.3-event3/"
+  title="Event 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.3-event3/">
+     <b> 4.3. </b> Event 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.1-workshop-overview/"
+  title="Introduction"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Introduction 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.2-prerequiste/"
+  title="Prerequiste"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.2-prerequiste/">
+    <b> 5.2. </b>Prerequiste 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-backend/"
+  title="Backend Deployment"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-backend/">
+    <b> 5.3. </b>Backend Deployment 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.3-backend/5.3.1-amazondynamodb/"
+  title="Amazon DynamoDB"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-backend/5.3.1-amazondynamodb/">
+    <b> 5.3.1 </b>Amazon DynamoDB 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-backend/5.3.2-amazoncognito/"
+  title="Amazon Cognito"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-backend/5.3.2-amazoncognito/">
+    <b> 5.3.2 </b>Amazon Cognito 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-backend/5.3.3-amazons3/"
+  title="Amazon S3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-backend/5.3.3-amazons3/">
+    <b> 5.3.3 </b>Amazon S3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-backend/5.3.4-lambdaapigateway/"
+  title="LAMBDA &#43; API GATEWAY"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-backend/5.3.4-lambdaapigateway/">
+    <b> 5.3.4 </b>LAMBDA &#43; API GATEWAY 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-frontend/"
+  title="Frontend Development"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-frontend/">
+     <b> 5.4. </b> Frontend Development 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.4-frontend/5.4.1-amazonamplify/"
+  title="Amazon Amplify"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-frontend/5.4.1-amazonamplify/">
+    <b> 5.4.1 </b>Amazon Amplify 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-frontend/5.4.2-cloudfrontwaf/"
+  title="Amazon CloudFornt &amp; WAF"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-frontend/5.4.2-cloudfrontwaf/">
+    <b> 5.4.2 </b>Amazon CloudFornt &amp; WAF 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-frontend/5.4.3-route53/"
+  title="Amazon Route53"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-frontend/5.4.3-route53/">
+    <b> 5.4.3 </b>Amazon Route53 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.5-ci-cd/"
+  title="CI/CD Pipeline"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.5-ci-cd/">
+     <b> 5.5. </b> CI/CD Pipeline 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.6-cloud-watch/"
+  title="Cloud Watch"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.6-cloud-watch/">
+     <b> 5.6. </b> Cloud Watch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.7-clean-up/"
+  title="Clean Up"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.7-clean-up/">
+    <b>5.7. </b>Clean Up 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/6-self-evaluation/"
+  title="Self-Assessment"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../6-self-evaluation/">
+     <b> 6. </b> Self-Assessment 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/7-feedback/"
+  title="Sharing and Feedback"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../7-feedback/">
+     <b> 7. </b> Sharing and Feedback 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="https://thienluhoan.github.io/workshop-template/1-worklog/1.12-week12/"
+                  selected
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="https://thienluhoan.github.io/workshop-template/vi/1-worklog/1.12-week12/"
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../'>Internship Report</a> > <a href='../../1-worklog/'>Worklog</a> > Week 12 Worklog
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#week-12-objectives">Week 12 Objectives:</a></li>
+        <li><a href="#tasks-to-be-carried-out-this-week">Tasks to be carried out this week:</a></li>
+        <li><a href="#week-12-achievements">Week 12 Achievements:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Week 12 Worklog
+            </h1>
+          
+
+        
+
+
+
+	<h3 id="week-12-objectives">Week 12 Objectives:</h3>
+<ul>
+<li>Deploy Backend lên AWS (API Gateway + Lambda + DynamoDB)</li>
+<li>Hoàn thiện Proposal document và Architecture diagrams</li>
+<li>Chuẩn bị Demo và Presentation</li>
+</ul>
+<h3 id="tasks-to-be-carried-out-this-week">Tasks to be carried out this week:</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Day</th>
+          <th>Task</th>
+          <th>Start Date</th>
+          <th>Completion Date</th>
+          <th>Reference Material</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>2</td>
+          <td>- Deploy Backend lên AWS: <br>  + SAM deploy to AWS <br>  + Configure API Gateway stages <br>  + Setup Cognito User Pool <br>  + Environment variables</td>
+          <td>25/11/2025</td>
+          <td>25/11/2025</td>
+          <td><a href="https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-deploy.html">AWS SAM Deploy</a></td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>- Configure Production: <br>  + Enable CloudWatch logging <br>  + Setup alarms and monitoring <br>  + API throttling and quotas <br>  + Security review</td>
+          <td>26/11/2025</td>
+          <td>26/11/2025</td>
+          <td><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html">CloudWatch Monitoring</a></td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>- Finalize Proposal document: <br>  + Update Architecture diagram <br>  + Actual cost estimation <br>  + Risk assessment <br>  + Deployment roadmap</td>
+          <td>27/11/2025</td>
+          <td>27/11/2025</td>
+          <td><a href="../../2-proposal/">Proposal Document</a></td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>- Prepare Demo: <br>  + Test all API endpoints <br>  + Prepare demo scenarios <br>  + Record demo video (if needed) <br>  + Troubleshoot issues</td>
+          <td>28/11/2025</td>
+          <td>28/11/2025</td>
+          <td><a href="https://www.postman.com/api-platform/api-testing/">Postman API Testing</a></td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>- Prepare Presentation: <br>  + Slide deck <br>  + Technical deep-dive <br>  + Q&amp;A preparation <br>  + Final review</td>
+          <td>29/11/2025</td>
+          <td>29/11/2025</td>
+          <td><a href="https://github.com/aws-samples/serverless-patterns">AWS Serverless Samples</a></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="week-12-achievements">Week 12 Achievements:</h3>
+<p><strong>Production Deployment</strong>:</p>
+<ul>
+<li>
+<p>✅ <strong>Deploy thành công lên AWS</strong>:</p>
+<ul>
+<li>API Gateway endpoint: <code>https://xxx.execute-api.us-east-1.amazonaws.com/prod</code></li>
+<li>Region: us-east-1 (N. Virginia)</li>
+<li>13 Lambda functions deployed và hoạt động</li>
+<li>7 DynamoDB tables với data</li>
+<li>Cognito authentication integrated</li>
+<li>S3 buckets configured</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Production Configuration</strong>:</p>
+<ul>
+<li>Custom domain: api.student-management.com (optional)</li>
+<li>API Gateway stages: dev, staging, prod</li>
+<li>Environment variables configured</li>
+<li>Secrets stored in Systems Manager Parameter Store</li>
+</ul>
+</li>
+</ul>
+<p><strong>Monitoring và Security</strong>:</p>
+<ul>
+<li>
+<p>✅ <strong>CloudWatch Monitoring</strong>:</p>
+<ul>
+<li>Dashboards: API Performance, Lambda Metrics, DynamoDB Stats</li>
+<li>Logs: All Lambda functions logging to CloudWatch</li>
+<li>Log retention: 30 days</li>
+<li>Structured logging (JSON format)</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>CloudWatch Alarms</strong> (8 alarms configured):</p>
+<ul>
+<li>API Gateway 5xx errors &gt; 10 in 5 minutes</li>
+<li>Lambda error rate &gt; 5%</li>
+<li>DynamoDB throttles &gt; 50 in 5 minutes</li>
+<li>API latency p99 &gt; 2 seconds</li>
+<li>Lambda concurrent executions &gt; 800</li>
+<li>Daily cost &gt; $20</li>
+<li>Cognito auth failures &gt; 20 in 5 minutes</li>
+<li>S3 storage &gt; 50GB</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Security Configuration</strong>:</p>
+<ul>
+<li>API Gateway throttling: 1000 req/sec per IP</li>
+<li>Cognito JWT authentication on all endpoints</li>
+<li>IAM least privilege policies</li>
+<li>CORS configured (whitelist domains)</li>
+<li>API Gateway request validation enabled</li>
+<li>S3 bucket encryption at rest</li>
+<li>VPC endpoints for DynamoDB (optional)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Tổng kết Backend APIs hoàn thành</strong>:</p>
+<table>
+  <thead>
+      <tr>
+          <th>#</th>
+          <th>API</th>
+          <th>Method</th>
+          <th>Endpoint</th>
+          <th>Chức năng</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>Create Class</td>
+          <td>POST</td>
+          <td><code>/lecturer/classes</code></td>
+          <td>Tạo lớp học mới</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>List Classes</td>
+          <td>GET</td>
+          <td><code>/lecturer/classes</code></td>
+          <td>Danh sách các lớp của giảng viên</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Edit Class</td>
+          <td>PUT</td>
+          <td><code>/lecturer/classes/{id}</code></td>
+          <td>Sửa thông tin lớp học</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>Deactivate Class</td>
+          <td>DELETE</td>
+          <td><code>/lecturer/classes/{id}</code></td>
+          <td>Vô hiệu hóa lớp học (soft delete)</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>List Students</td>
+          <td>GET</td>
+          <td><code>/lecturer/students/{class_id}</code></td>
+          <td>Danh sách sinh viên trong lớp</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>Create Assignment</td>
+          <td>POST</td>
+          <td><code>/lecturer/assignments</code></td>
+          <td>Tạo bài tập mới</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>List Assignments</td>
+          <td>GET</td>
+          <td><code>/lecturer/classes/{class_id}/assignments</code></td>
+          <td>Danh sách bài tập của lớp</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>Edit Assignment</td>
+          <td>PUT</td>
+          <td><code>/lecturer/assignments/{id}</code></td>
+          <td>Sửa bài tập</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>Delete Assignment</td>
+          <td>DELETE</td>
+          <td><code>/lecturer/assignments/{id}</code></td>
+          <td>Xóa bài tập</td>
+      </tr>
+      <tr>
+          <td>10</td>
+          <td>Update Grades</td>
+          <td>POST</td>
+          <td><code>/lecturer/assignments/{assignment_id}/update-grades</code></td>
+          <td>Cập nhật điểm cho sinh viên</td>
+      </tr>
+      <tr>
+          <td>11</td>
+          <td>Create Post</td>
+          <td>POST</td>
+          <td><code>/classes/{class_id}/posts</code></td>
+          <td>Tạo thông báo cho lớp học</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>AWS Services Sử dụng</strong>:</p>
+<ul>
+<li>✅ <strong>AWS Lambda</strong>: 13 functions (Node.js 18.x hoặc Python 3.11)</li>
+<li>✅ <strong>Amazon DynamoDB</strong>: 7 tables
+<ul>
+<li>Classes, Students, Enrollments, Assignments, Grades, Posts, Users</li>
+</ul>
+</li>
+<li>✅ <strong>Amazon API Gateway</strong>: 1 REST API với 11 endpoints</li>
+<li>✅ <strong>Amazon Cognito</strong>: User Pool cho authentication</li>
+<li>✅ <strong>Amazon S3</strong>: 1 bucket cho assignment files</li>
+<li>✅ <strong>Amazon SNS</strong>: Notifications cho students</li>
+<li>✅ <strong>Amazon CloudWatch</strong>: Monitoring, logging, alarms</li>
+<li>✅ <strong>AWS IAM</strong>: Roles và policies</li>
+</ul>
+<p><strong>Proposal Document Hoàn thiện</strong>:</p>
+<ul>
+<li>
+<p>✅ <strong>Architecture Diagrams</strong>:</p>
+<ul>
+<li>High-level system architecture (AWS services)</li>
+<li>API flow diagrams (request/response flow)</li>
+<li>Database schema (DynamoDB table design)</li>
+<li>Authentication flow (Cognito + JWT)</li>
+<li>Deployment architecture (SAM + CloudFormation)</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Chi phí ước tính</strong> (Production):</p>
+<ul>
+<li>Lambda: $5-8/month (1M requests, 512MB, 3s avg duration)</li>
+<li>DynamoDB: $3-5/month (on-demand, 1GB storage)</li>
+<li>API Gateway: $3-4/month (1M requests)</li>
+<li>S3: $1-2/month (10GB storage, 100K requests)</li>
+<li>CloudWatch: $2-3/month (logs + metrics)</li>
+<li>Cognito: $0/month (Free tier: 50K MAU)</li>
+<li>SNS: $0.50/month (email notifications)</li>
+<li><strong>Total: ~$15-23/month</strong> (cho 100-200 active users)</li>
+<li><strong>Scaling</strong>: $50-100/month (cho 1000-2000 users)</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Đánh giá 8 rủi ro chính</strong>:</p>
+<ol>
+<li>Lambda cold starts → Provisioned concurrency</li>
+<li>DynamoDB throttling → On-demand capacity mode</li>
+<li>Cost overruns → Budget alerts + Cost Explorer</li>
+<li>Security vulnerabilities → API Gateway WAF + encryption</li>
+<li>Data loss → DynamoDB point-in-time recovery</li>
+<li>API downtime → Multi-AZ deployment</li>
+<li>Slow performance → API caching + Lambda optimization</li>
+<li>Scalability limits → Auto-scaling configured</li>
+</ol>
+</li>
+<li>
+<p>✅ <strong>Lộ trình 14 tuần</strong>:</p>
+<ul>
+<li>Tuần 1-7: Học AWS fundamentals (VPC, EC2, S3, IAM, RDS, Security)</li>
+<li>Tuần 8: Setup infrastructure + Class Management APIs (5 APIs)</li>
+<li>Tuần 9: Assignment Management APIs (5 APIs)</li>
+<li>Tuần 10: Post API + Optimization + Monitoring (1 API)</li>
+<li>Tuần 11: Integration testing + Documentation + Staging</li>
+<li>Tuần 12: Production deployment + Demo + Presentation</li>
+</ul>
+</li>
+</ul>
+<p><strong>Demo Preparation</strong>:</p>
+<ul>
+<li>
+<p>✅ <strong>Demo Scenarios</strong>:</p>
+<ul>
+<li>Scenario 1: Lecturer creates class → adds students → lists students</li>
+<li>Scenario 2: Creates assignment → students submit → updates grades</li>
+<li>Scenario 3: Posts announcement → notifications sent</li>
+<li>Scenario 4: Lists and filters classes/assignments</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Test Data</strong>:</p>
+<ul>
+<li>5 sample classes (&ldquo;CS101&rdquo;, &ldquo;MATH201&rdquo;, etc.)</li>
+<li>20 test students</li>
+<li>10 assignments with various due dates</li>
+<li>Sample grades and feedback</li>
+<li>5 announcements/posts</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Demo Video</strong> (optional):</p>
+<ul>
+<li>Screen recording of API testing in Postman</li>
+<li>Duration: 5-7 minutes</li>
+<li>Voiceover explaining each API call</li>
+</ul>
+</li>
+</ul>
+<p><strong>Presentation Deck</strong>:</p>
+<ul>
+<li>
+<p>✅ <strong>Slide Content</strong> (15-20 slides):</p>
+<ol>
+<li>Title + Introduction</li>
+<li>Problem Statement (quản lý lớp học thủ công)</li>
+<li>Solution Overview (Serverless Student Management System)</li>
+<li>AWS Architecture Diagram</li>
+<li>Key AWS Services (Lambda, DynamoDB, API Gateway, Cognito)</li>
+<li>API Endpoints Summary (11 APIs)</li>
+<li>Database Schema (DynamoDB tables)</li>
+<li>Authentication Flow (Cognito JWT)</li>
+<li>Deployment Process (AWS SAM)</li>
+<li>Monitoring &amp; Security (CloudWatch, WAF)</li>
+<li>Cost Analysis ($15-23/month)</li>
+<li>Demo Walkthrough</li>
+<li>Performance Metrics (220ms avg latency)</li>
+<li>Challenges &amp; Solutions</li>
+<li>Future Enhancements</li>
+<li>Q&amp;A</li>
+</ol>
+</li>
+<li>
+<p>✅ <strong>Technical Deep-Dive</strong>:</p>
+<ul>
+<li>Lambda function code snippets</li>
+<li>DynamoDB query examples</li>
+<li>API Gateway configuration</li>
+<li>SAM template.yaml structure</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Q&amp;A Preparation</strong>:</p>
+<ul>
+<li>Why serverless? (cost, scalability, no server management)</li>
+<li>Why DynamoDB over RDS? (NoSQL, on-demand scaling, low latency)</li>
+<li>How to handle cold starts? (Provisioned concurrency, keep-warm)</li>
+<li>Security best practices? (Cognito, IAM, encryption, WAF)</li>
+<li>Cost optimization? (Caching, right-sizing Lambda, on-demand DynamoDB)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Tổng kết 12 tuần thực tập</strong>:</p>
+<ul>
+<li>
+<p>✅ <strong>Tuần 1-7</strong>: Học AWS fundamentals</p>
+<ul>
+<li>VPC, EC2, S3, IAM, RDS</li>
+<li>CloudWatch, Auto Scaling, Load Balancers</li>
+<li>Security best practices</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Tuần 8-12</strong>: Phát triển Backend APIs</p>
+<ul>
+<li>11 REST APIs implemented</li>
+<li>Serverless architecture (Lambda + DynamoDB)</li>
+<li>Authentication với Cognito</li>
+<li>Production deployment</li>
+<li>Monitoring và Security</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Key Achievements</strong>:</p>
+<ul>
+<li>Hoàn thành 11 production-ready APIs</li>
+<li>Deploy thành công lên AWS</li>
+<li>Chi phí thấp: ~$15-23/month</li>
+<li>Performance tốt: 220ms average latency</li>
+<li>Scalable: 100-2000 users</li>
+<li>Secure: Cognito, IAM, encryption, monitoring</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Skills Acquired</strong>:</p>
+<ul>
+<li>AWS Serverless development (Lambda, DynamoDB, API Gateway)</li>
+<li>Infrastructure as Code (AWS SAM, CloudFormation)</li>
+<li>RESTful API design</li>
+<li>Authentication &amp; Authorization (Cognito, JWT)</li>
+<li>Monitoring &amp; Logging (CloudWatch)</li>
+<li>Cost optimization</li>
+<li>Technical documentation</li>
+<li>Presentation &amp; Demo skills</li>
+</ul>
+</li>
+</ul>
+<p><strong>Next Steps</strong> (Post-Internship):</p>
+<ul>
+<li>
+<p>Frontend development (React/Vue.js)</p>
+</li>
+<li>
+<p>Student-facing APIs</p>
+</li>
+<li>
+<p>REST API polling cho chat messages</p>
+</li>
+<li>
+<p>Mobile app (React Native)</p>
+</li>
+<li>
+<p>Analytics dashboard</p>
+</li>
+<li>
+<p>Automated testing (CI/CD pipeline)</p>
+<ul>
+<li>Stack name: student-management-prod</li>
+<li>Region: us-east-1</li>
+<li>Resources deployed:
+<ul>
+<li>13 Lambda functions</li>
+<li>1 API Gateway REST API</li>
+<li>1 REST API (API Gateway) với 17 endpoints</li>
+<li>7 DynamoDB tables</li>
+<li>1 Cognito User Pool</li>
+<li>2 S3 buckets</li>
+<li>1 EventBridge Event Bus</li>
+</ul>
+</li>
+<li>Deployment time: 8 minutes</li>
+<li>Zero downtime deployment (blue-green strategy)</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Production Environment Validation</strong>:</p>
+<ul>
+<li>All 13 API endpoints responding (200 OK)</li>
+<li>Cognito authentication working</li>
+<li>DynamoDB tables accessible</li>
+<li>Chat polling mechanism working</li>
+<li>S3 pre-signed URL generation functional</li>
+<li>EventBridge events triggering correctly</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Production Configuration</strong>:</p>
+<ul>
+<li>Custom domain: api.student-management.com</li>
+<li>SSL/TLS certificate (AWS Certificate Manager)</li>
+<li>Route 53 DNS configuration</li>
+<li>CloudFront distribution for static assets</li>
+</ul>
+</li>
+</ul>
+<p><strong>Monitoring and Alerting</strong>:</p>
+<ul>
+<li>
+<p>✅ <strong>CloudWatch Dashboards Created</strong>:</p>
+<ul>
+<li><strong>API Performance Dashboard</strong>:
+<ul>
+<li>API Gateway: Request count, 4xx/5xx errors, latency (p50, p95, p99)</li>
+<li>Lambda: Invocations, duration, errors, concurrent executions</li>
+<li>DynamoDB: Read/write capacity, throttles, latency</li>
+</ul>
+</li>
+<li><strong>Cost Dashboard</strong>:
+<ul>
+<li>Daily cost breakdown by service</li>
+<li>Month-to-date spending</li>
+<li>Projected monthly cost</li>
+</ul>
+</li>
+<li><strong>Business Metrics Dashboard</strong>:
+<ul>
+<li>Student enrollments per day</li>
+<li>Chat messages sent</li>
+<li>Assignment submissions</li>
+<li>Ranking updates</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>CloudWatch Alarms Configured (12 alarms)</strong>:</p>
+<ul>
+<li><strong>Critical Alarms</strong> (PagerDuty integration):
+<ol>
+<li>API Gateway 5xx errors &gt; 10 in 5 minutes</li>
+<li>Lambda error rate &gt; 5% for any function</li>
+<li>DynamoDB read/write throttles &gt; 50 in 5 minutes</li>
+<li>Cognito authentication failures &gt; 20 in 5 minutes</li>
+</ol>
+</li>
+<li><strong>Warning Alarms</strong> (Email to team):
+5. API latency p99 &gt; 2 seconds
+6. Lambda concurrent executions &gt; 800 (limit: 1000)
+7. DynamoDB consumed capacity &gt; 80%
+8. Daily AWS cost &gt; $50</li>
+<li><strong>Informational Alarms</strong>:
+9. Successful deployments
+10. Lambda cold start rate &gt; 10%
+11. API cache hit rate &lt; 70%
+12. S3 storage &gt; 100GB</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>SNS Topics for Alerts</strong>:</p>
+<ul>
+<li>critical-alerts: PagerDuty integration (24/7 on-call)</li>
+<li>warning-alerts: Email to dev team</li>
+<li>info-alerts: Slack #student-mgmt-alerts channel</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>AWS X-Ray Tracing Enabled</strong>:</p>
+<ul>
+<li>All Lambda functions instrumented</li>
+<li>Service map visualization</li>
+<li>Trace sampling: 10% of requests</li>
+<li>Latency analysis by API endpoint</li>
+<li>Identifies bottlenecks (DynamoDB queries, S3 uploads)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Centralized Logging</strong>:</p>
+<ul>
+<li>
+<p>✅ <strong>CloudWatch Logs Configuration</strong>:</p>
+<ul>
+<li>Log groups created for all Lambda functions</li>
+<li>Log retention: 30 days</li>
+<li>Structured logging (JSON format):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;timestamp&#34;</span>: <span style="color:#e6db74">&#34;2025-01-01T10:30:00Z&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;level&#34;</span>: <span style="color:#e6db74">&#34;INFO&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;userId&#34;</span>: <span style="color:#e6db74">&#34;user-123&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;endpoint&#34;</span>: <span style="color:#e6db74">&#34;/Student/ranking&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;latency&#34;</span>: <span style="color:#ae81ff">250</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;statusCode&#34;</span>: <span style="color:#ae81ff">200</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
+<li>Log aggregation across all functions</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>CloudWatch Logs Insights Queries</strong>:</p>
+<ul>
+<li><strong>Top 10 slowest API requests</strong>:
+<pre tabindex="0"><code>fields @timestamp, endpoint, latency
+| filter latency &gt; 500
+| sort latency desc
+| limit 10
+</code></pre></li>
+<li><strong>Error rate by endpoint</strong>:
+<pre tabindex="0"><code>fields endpoint, statusCode
+| filter statusCode &gt;= 400
+| stats count() by endpoint
+</code></pre></li>
+<li><strong>Most active users</strong>:
+<pre tabindex="0"><code>fields userId
+| stats count() as requestCount by userId
+| sort requestCount desc
+| limit 20
+</code></pre></li>
+<li>Queries saved to dashboard</li>
+</ul>
+</li>
+</ul>
+<p><strong>Production Testing</strong>:</p>
+<ul>
+<li>
+<p>✅ <strong>Smoke Tests</strong> (Postman Collection):</p>
+<ul>
+<li>13 API endpoints tested</li>
+<li>All tests passed (100% success rate)</li>
+<li>Average response time: 220ms</li>
+<li>Authentication flow validated</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Load Testing Results</strong>:</p>
+<ul>
+<li>Tool: AWS Distributed Load Testing</li>
+<li>Configuration: 1,000 concurrent users, 60 minutes duration</li>
+<li>Results:
+<ul>
+<li>Total requests: 3.6 million</li>
+<li>Average latency: 280ms</li>
+<li>95th percentile: 680ms</li>
+<li>99th percentile: 1.4s</li>
+<li>Error rate: 0.01% (all timeout errors)</li>
+<li>Peak throughput: 1,200 requests/second</li>
+<li>Lambda auto-scaling: 200 → 850 concurrent executions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Data Migration</strong>:</p>
+<ul>
+<li>Migrated 500 student records from staging to production</li>
+<li>180 assignments and 50 classes seeded</li>
+<li>Data validation: 100% integrity check passed</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Disaster Recovery Test</strong>:</p>
+<ul>
+<li>Simulated DynamoDB table deletion</li>
+<li>Restored from point-in-time backup (5 minutes)</li>
+<li>Validated data completeness (100% recovery)</li>
+<li>RTO (Recovery Time Objective): 10 minutes</li>
+<li>RPO (Recovery Point Objective): 5 minutes</li>
+</ul>
+</li>
+</ul>
+<p><strong>Documentation</strong>:</p>
+<ul>
+<li>
+<p>✅ <strong>Operational Runbook Created</strong> (50 pages):</p>
+<ul>
+<li>Architecture diagrams (AWS services, data flow)</li>
+<li>Deployment procedures (CDK commands, rollback steps)</li>
+<li>Monitoring and alerting guide</li>
+<li>Troubleshooting common issues:
+<ul>
+<li>Lambda timeout errors</li>
+<li>DynamoDB throttling</li>
+<li>Cognito authentication failures</li>
+<li>Chat polling errors</li>
+</ul>
+</li>
+<li>Incident response procedures</li>
+<li>Backup and disaster recovery</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>API Documentation</strong> (Swagger UI):</p>
+<ul>
+<li>All 13 endpoints documented</li>
+<li>Request/response examples</li>
+<li>Authentication guide</li>
+<li>Rate limiting and error codes</li>
+<li>Code samples (JavaScript, Python, cURL)</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Technical Architecture Document</strong> (30 pages):</p>
+<ul>
+<li>System overview</li>
+<li>AWS services used (Lambda, DynamoDB, API Gateway, Cognito, EventBridge, S3, CloudWatch)</li>
+<li>Database schema (DynamoDB tables, GSI design)</li>
+<li>Security architecture (IAM roles, VPC, encryption)</li>
+<li>Cost analysis and optimization</li>
+<li>Scalability considerations (auto-scaling, caching, provisioned concurrency)</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Deployment Guide</strong>:</p>
+<ul>
+<li>AWS account setup (IAM users, roles, policies)</li>
+<li>CDK prerequisites (Node.js, AWS CLI)</li>
+<li>Environment configuration (.env files)</li>
+<li>Step-by-step deployment instructions</li>
+<li>Post-deployment validation checklist</li>
+</ul>
+</li>
+</ul>
+<p><strong>Knowledge Transfer</strong>:</p>
+<ul>
+<li>
+<p>✅ <strong>Team Training Session</strong> (3 hours):</p>
+<ul>
+<li>Architecture walkthrough</li>
+<li>Live demonstration of APIs</li>
+<li>CloudWatch dashboard review</li>
+<li>Deployment process demo</li>
+<li>Q&amp;A session</li>
+<li>5 team members attended</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Handover Checklist</strong>:</p>
+<ul>
+<li>AWS account credentials shared (1Password)</li>
+<li>GitHub repository access granted</li>
+<li>Slack channel created (#student-mgmt-prod)</li>
+<li>PagerDuty on-call rotation configured</li>
+<li>Documentation shared (Confluence)</li>
+<li>Swagger UI access granted</li>
+<li>CloudWatch dashboard bookmarks</li>
+</ul>
+</li>
+</ul>
+<p><strong>Project Retrospective</strong>:</p>
+<ul>
+<li>
+<p>✅ <strong>What Went Well</strong>:</p>
+<ul>
+<li>Serverless architecture enabled rapid development</li>
+<li>AWS services (Lambda, DynamoDB, API Gateway) worked seamlessly</li>
+<li>CDK Infrastructure as Code simplified deployments</li>
+<li>Polling mechanism for chat worked well</li>
+<li>Cost optimization achieved 40% savings vs initial estimates</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Challenges Overcome</strong>:</p>
+<ul>
+<li>DynamoDB query performance (solved with GSI design)</li>
+<li>Lambda cold starts (solved with provisioned concurrency)</li>
+<li>Complex authentication flow (Cognito + JWT validation)</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Lessons Learned</strong>:</p>
+<ul>
+<li>Start with monitoring/logging infrastructure early</li>
+<li>Load testing reveals issues not visible in dev</li>
+<li>DynamoDB GSI design is critical for performance</li>
+<li>API Gateway caching dramatically reduces costs</li>
+<li>Documentation is essential for team handover</li>
+</ul>
+</li>
+</ul>
+<p><strong>Final Production Metrics</strong>:</p>
+<ul>
+<li>
+<p>✅ <strong>Performance</strong>:</p>
+<ul>
+<li>API response time: 220ms average, 680ms p95</li>
+<li>Lambda cold start: 400ms</li>
+<li>DynamoDB query latency: 15ms</li>
+<li>Chat message retrieval: 120ms</li>
+<li>99.99% uptime target (SLA)</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Scalability</strong>:</p>
+<ul>
+<li>Supports 1,000 concurrent users</li>
+<li>Peak throughput: 1,200 requests/second</li>
+<li>Auto-scales to 500-1,000 students</li>
+<li>Lambda: 1,000 concurrent executions (reserved)</li>
+<li>DynamoDB: On-demand scaling (no throttling)</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>Cost (Projected Monthly)</strong>:</p>
+<ul>
+<li>Lambda: $35 (provisioned concurrency: $25)</li>
+<li>DynamoDB: $28</li>
+<li>API Gateway: $15</li>
+<li>S3: $3</li>
+<li>CloudWatch: $5</li>
+<li>Other (KMS, WAF, Route 53): $10</li>
+<li><strong>Total: ~$119 USD/month</strong> (for 500 active students)</li>
+<li><strong>Cost per student: $0.24/month</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>Key Learnings</strong>:</p>
+<ul>
+<li>
+<p>AWS serverless architecture is cost-effective for MVP and scales to production</p>
+</li>
+<li>
+<p>Infrastructure as Code (CDK) enables reproducible deployments</p>
+</li>
+<li>
+<p>Monitoring and logging are critical for production troubleshooting</p>
+</li>
+<li>
+<p>Load testing is essential before production launch</p>
+</li>
+<li>
+<p>Comprehensive documentation accelerates team onboarding</p>
+</li>
+<li>
+<p>Blue-green deployment enables zero-downtime releases</p>
+<ul>
+<li>Compute</li>
+<li>Storage</li>
+<li>Networking</li>
+<li>Database</li>
+<li>&hellip;</li>
+</ul>
+</li>
+<li>
+<p>Successfully created and configured an AWS Free Tier account.</p>
+</li>
+<li>
+<p>Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.</p>
+</li>
+<li>
+<p>Installed and configured AWS CLI on the computer, including:</p>
+<ul>
+<li>Access Key</li>
+<li>Secret Key</li>
+<li>Default Region</li>
+<li>&hellip;</li>
+</ul>
+</li>
+<li>
+<p>Used AWS CLI to perform basic operations such as:</p>
+<ul>
+<li>Check account &amp; configuration information</li>
+<li>Retrieve the list of regions</li>
+<li>View EC2 service</li>
+<li>Create and manage key pairs</li>
+<li>Check information about running services</li>
+<li>&hellip;</li>
+</ul>
+</li>
+<li>
+<p>Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.</p>
+</li>
+<li>
+<p>&hellip;</p>
+</li>
+</ul>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../1-worklog/1.11-week11/" title="Week 11 Worklog"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../2-proposal/" title="Proposal" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1765285578"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1765285578"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1765285578"></script>
+    <script src="../../js/jquery.sticky.js?1765285578"></script>
+    <script src="../../js/featherlight.min.js?1765285578"></script>
+    <script src="../../js/highlight.pack.js?1765285578"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1765285578"></script>
+    <script src="../../js/learn.js?1765285578"></script>
+    <script src="../../js/hugo-learn.js?1765285578"></script>
+
+    <link href="../../mermaid/mermaid.css?1765285578" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1765285578"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>
